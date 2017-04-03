@@ -1,0 +1,32 @@
+section {
+  min-height: 400px;
+  padding: 4rem 0;
+
+  &.image-section {
+    height: 600px;
+    background: center center no-repeat;
+    background-size: cover;
+  }
+}
+
+
+.assured-people {
+  margin: 0 auto;
+  max-width: 200px;
+}
+
+.screenshot {
+  @extend .z-depth-5;
+  margin-top: ($h3-fontsize / 2);
+  @media only screen and (max-width: $medium-screen) {
+    margin-bottom: $h3-fontsize;
+  }
+}
+
+.v-align {
+  @media only screen and (min-width: $medium-screen) {
+    position: relative;
+    top: 50%;
+    transform: perspective(1px) translateY(-50%);
+  }
+}

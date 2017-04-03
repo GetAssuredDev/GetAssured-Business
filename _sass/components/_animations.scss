@@ -1,0 +1,60 @@
+// KEYFRAMES
+
+//css float animation with delay
+@keyframes float_7556 {
+  0% { transform: translateY(0) }
+  33.33333% { transform: translateY(-6px) }
+  66.66667% { transform: translateY(0) }
+  100% { transform: translateY(0) }
+}
+
+// ANIMATIONS
+
+.animation {
+  &.loop {
+    //css float animation with delay
+    &.float {
+      animation: float_7556 3s linear infinite;
+      transform-origin: 50% 50%;
+    }
+  }
+}
+
+// DELAYS
+
+@for $animation-delay from 1 through $animation-delay-limit {
+  .animation-delay-#{$animation-delay} {
+     animation-delay: $animation-delay-start + ($animation-delay*$animation-delay-increment);
+     -moz-animation-delay: $animation-delay-start + ($animation-delay*$animation-delay-increment);
+     -webkit-animation-delay: $animation-delay-start + ($animation-delay*$animation-delay-increment);
+  }
+}
+
+@-webkit-keyframes zoomInFade {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomInFade {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.zoomInFade {
+  -webkit-animation-name: zoomInFade;
+  animation-name: zoomInFade;
+}

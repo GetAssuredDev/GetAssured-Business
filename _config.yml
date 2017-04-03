@@ -1,0 +1,20 @@
+# Site Settings
+title: GetAssured for Business
+email: luqman@get-assured.co
+description: >
+  A guide to getting started with Jekyll.
+baseurl: ""
+url: "http://localhost:4000"
+twitter_username: getAssured
+github_username:  getAssured
+# Build Settings
+sass:
+  sass_dir: _sass
+include: ['_pages']
+kramdown:
+  input: GFM
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock

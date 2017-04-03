@@ -1,0 +1,114 @@
+---
+layout: default
+---
+
+  <header class="hero home animated zoomInFade">
+    <div class="container v-align">
+      <div class="row">
+        <div class="col s12 m7 offset-m5">
+          <h1 class="animated fadeInUp animation-delay-8">Reimagine Employee Benefits</h1>
+          <h4 class="regular one-point-eight-lined animated fadeInUp animation-delay-12">The answer to happy, healthy and productive employees begins with us.</h4>
+          <p style="margin-top: 4rem" class="animated fadeInUp animation-delay-20">
+            <a href="#" class="btn brand-red-ghost"><i class="material-icons left">play_circle_filled</i>Learn More</a>
+            <a href="#" class="btn primary">Get Brochure</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="to-bottom animated fadeIn animation-delay-28">
+      <h5 class="center-align">Find out how we can help you achieve better harmony at work.</h5>
+      <p class="center-align"><a href="#features"><i class="material-icons animation loop float">keyboard_arrow_down</i></a></p>
+    </div>
+  </header>
+  <ul id="features" class="collapsible features-accordion scrollspy" data-collapsible="accordion">
+    {% for section in page.sections %}
+      {% assign mod = forloop.index | modulo: 2 %}
+      {% if mod != 0 %}
+        <!-- layout for odd numbered  -->
+        <li>
+          <div class="collapsible-header" id="{{ section.id  | textilize }}Head">
+            <div class="container">
+              <div class="row">
+                <div class="col s12 m6 push-m6">
+                  <div class="screenshot">
+                    <img src="{{ section.screen | absolute_url }}" class="responsive-img materialboxed">
+                  </div>
+                </div>
+                <div class="col s12 m5 pull-m6">
+                  <h3>{{ section.title  | textilize }}</h3>
+                  <p>{{ section.content  | textilize }}</p>
+                  <a href="#!" class="btn primary-ghost">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="collapsible-body" id="{{ section.id  | textilize }}Body" >
+            <div class="row flex-row">
+              <div class="col s12 m6 collapse-content" style="background-image: url({{ section.image | absolute_url }})"></div>
+              <div class="col s12 m6 collapse-content grey lighten-4">
+                <div class="container">
+                  {% for point in section.points %}
+                    <div class="collapse-list">
+                      <h6>{{ point.content  | textilize }}</h6>
+                    </div>
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      {% else %}
+        <!-- layout for even numbered  -->
+        <li>
+          <div class="collapsible-header" id="{{ section.id  | textilize }}Head">
+            <div class="container">
+              <div class="row">
+                <div class="col s12 m6">
+                  <div class="screenshot">
+                    <img src="{{ section.screen | absolute_url }}" class="responsive-img materialboxed">
+                  </div>
+                </div>
+                <div class="col s12 m5 offset-m1">
+                  <h3>{{ section.title  | textilize }}</h3>
+                  <p>{{ section.content  | textilize }}</p>
+                  <a href="#!" class="btn primary-ghost">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="collapsible-body" id="{{ section.id  | textilize }}Body" >
+            <div class="row flex-row">
+              <div class="col s12 m6 collapse-content grey lighten-4">
+                <div class="container">
+                  {% for point in section.points %}
+                    <div class="collapse-list">
+                      <h6>{{ point.content  | textilize }}</h6>
+                    </div>
+                  {% endfor %}
+                </div>
+              </div>
+              <div class="col s12 m6 collapse-content" style="background-image: url({{ section.image | absolute_url }})"></div>
+            </div>
+          </div>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+  {% include cta.html %}
+  <section class="image-section" style="background-image: url({{ "/assets/images/get-assured-we-bg-4.jpg" | absolute_url }})"></section>
+  <section class="primary white-text">
+    <div class="container">
+      <div class="row">
+        <div class="col m6">
+          <h3>We are GetAssured</h3>
+          <h5 class="italic" style="margin-top: 1rem">"We believe in helping you achieve a happier workforce without breaking the bank."</h5>
+          <p>GetAssured for Business is Singapore's first life insurance based employee benefits portal. We started with one sole purpose: to empower companies to value-add to their employees at no cost.</p>
+        </div>
+        <div class="col m6">
+          <p>With almost two decades of combined experience in the employee benefits and life insurance industry, our team is committed to helping employers take better care of your employees at no additional cost so you can focus on what you do best - building and growing your business.</p>
+        </div>
+      </div>
+      <a href="{{ site.baseurl }}/why-us" class="btn white-ghost-primary">Learn More</a>
+      <a href="{{ site.baseurl }}/faqs" class="btn white-primary">FAQs</a>
+    </div>
+  </section>
