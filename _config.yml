@@ -1,10 +1,10 @@
 # Site Settings
 title: GetAssured for Business
-email: luqman@get-assured.co
+email: hello@get-assured.co
 description: >
   A guide to getting started with Jekyll.
 baseurl: ""
-url: "http://localhost:4000"
+url: "http://business.get-assured.co"
 twitter_username: getAssured
 github_username:  getAssured
 # Build Settings

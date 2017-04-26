@@ -69,7 +69,7 @@ nav {
     font-size: $navbar-brand-font-size;
     padding: 0;
     white-space: nowrap;
-    background: url('assets/images/get-assured-business-logo@3x.png') left center no-repeat;
+    background: url('assets/images/get-assured-business-logo-white@3x.png') left center no-repeat;
     background-size: 100% auto;
     width: 200px;
     height: 100%;
@@ -83,6 +83,7 @@ nav {
     @media #{$medium-and-down} {
       left: 50%;
       transform: translateX(-50%);
+      width: 150px;
 
       &.left, &.right {
         padding: 0;
@@ -227,13 +228,26 @@ nav {
 
 .nav {
   transition: all .2s;
+
   &.sticky {
     @extend .z-depth-1;
     background-color: white;
 
+    a {
+      color: $navbar-font-color;
+      &.btn {
+        color: white;
+      }
+    }
+
+    .brand-logo {
+      background: url('assets/images/get-assured-business-logo@3x.png') left center no-repeat;
+      background-size: 100% auto;
+    }
+
     // Logo
     .brand-logo {
-      width: 160px;
+      width: 150px;
       height: 100%;
     }
   }

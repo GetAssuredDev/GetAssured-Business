@@ -1,0 +1,9 @@
+---
+layout: default
+---
+{% include page-header.html %}
+
+{{ content }}
+
+{% include cta.html %}
+<section class="image-section {{ page.imageBreakClass }}" style="background-image: url({{ page.imageBreak | prepend: site.baseurl }})"></section>

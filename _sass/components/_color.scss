@@ -462,6 +462,100 @@ $colors: (
         h1,h2,h3,h4,h5,h6 {
           color: $color_value !important;
         }
+
+        &.nav {
+          a {
+            color: $color_value !important;
+
+            &.btn {
+              &.nav-btn-ghost {
+                background: none !important;
+                border: 2px solid $color_value !important;
+                color: $color_value !important;
+                &.btn:hover {
+                  background: $color_value !important;
+                  color: lighten($color_value, 80%) !important;
+                  box-shadow: 0 6px 10px 0 rgba($color_value, 0.14), 0 1px 18px 0 rgba($color_value, 0.12), 0 3px 5px -1px rgba($color_value, 0.3);
+                }
+                &.btn.active, &.btn:focus {
+                  border: 2px solid adjust-hue(darken($color_value, 20%), 10deg) !important;
+                  background: adjust-hue(darken($color_value, 20%), 10deg) !important;
+                  color: lighten($color_value, 80%) !important;
+                  box-shadow: 0 2px 2px 0 rgba($color_value, 0.14), 0 1px 5px 0 rgba($color_value, 0.12), 0 3px 1px -2px rgba($color_value, 0.2);
+                }
+              }
+              &.nav-btn {
+                color: white !important;
+                background-color: $color_value !important;
+                border: 2px solid $color_value !important;
+                &:hover {
+                  border: 2px solid adjust-hue(darken($color_value, 10%), 10deg) !important;
+                  background: adjust-hue(darken($color_value, 10%), 10deg) !important;
+                  box-shadow: 0 6px 10px 0 rgba($color_value, 0.14), 0 1px 18px 0 rgba($color_value, 0.12), 0 3px 5px -1px rgba($color_value, 0.3);
+                }
+                &.active, &:focus {
+                  border: 2px solid adjust-hue(darken($color_value, 20%), 10deg) !important;
+                  background: adjust-hue(darken($color_value, 20%), 10deg) !important;
+                  box-shadow: 0 2px 2px 0 rgba($color_value, 0.14), 0 1px 5px 0 rgba($color_value, 0.12), 0 3px 1px -2px rgba($color_value, 0.2);
+                }
+              }
+            }
+          }
+        }
+      }
+      .nav {
+        .#{$color_name} {
+          background-color: $color_value !important;
+          // Style modification for normal buttons
+          &.btn {
+            border: 2px solid $color_value !important;
+            &:hover {
+              border: 2px solid adjust-hue(darken($color_value, 10%), 10deg) !important;
+              background: adjust-hue(darken($color_value, 10%), 10deg) !important;
+              box-shadow: 0 6px 10px 0 rgba($color_value, 0.14), 0 1px 18px 0 rgba($color_value, 0.12), 0 3px 5px -1px rgba($color_value, 0.3);
+            }
+            &.active, &:focus {
+              border: 2px solid adjust-hue(darken($color_value, 20%), 10deg) !important;
+              background: adjust-hue(darken($color_value, 20%), 10deg) !important;
+              box-shadow: 0 2px 2px 0 rgba($color_value, 0.14), 0 1px 5px 0 rgba($color_value, 0.12), 0 3px 1px -2px rgba($color_value, 0.2);
+            }
+          }
+        }
+        &.sticky {
+          .#{$color_name} {
+            background-color: $color_value !important;
+            // Style modification for normal buttons
+            &.btn {
+              border: 2px solid $color_value !important;
+              &:hover {
+                border: 2px solid adjust-hue(darken($color_value, 10%), 10deg) !important;
+                background: adjust-hue(darken($color_value, 10%), 10deg) !important;
+                box-shadow: 0 6px 10px 0 rgba($color_value, 0.14), 0 1px 18px 0 rgba($color_value, 0.12), 0 3px 5px -1px rgba($color_value, 0.3);
+              }
+              &.active, &:focus {
+                border: 2px solid adjust-hue(darken($color_value, 20%), 10deg) !important;
+                background: adjust-hue(darken($color_value, 20%), 10deg) !important;
+                box-shadow: 0 2px 2px 0 rgba($color_value, 0.14), 0 1px 5px 0 rgba($color_value, 0.12), 0 3px 1px -2px rgba($color_value, 0.2);
+              }
+            }
+          }
+          .#{$color_name}-ghost {
+            background: none !important;
+            border: 2px solid $color_value !important;
+            color: $color_value !important;
+            &.btn:hover {
+              background: $color_value !important;
+              color: lighten($color_value, 80%) !important;
+              box-shadow: 0 6px 10px 0 rgba($color_value, 0.14), 0 1px 18px 0 rgba($color_value, 0.12), 0 3px 5px -1px rgba($color_value, 0.3);
+            }
+            &.btn.active, &.btn:focus {
+              border: 2px solid adjust-hue(darken($color_value, 20%), 10deg) !important;
+              background: adjust-hue(darken($color_value, 20%), 10deg) !important;
+              color: lighten($color_value, 80%) !important;
+              box-shadow: 0 2px 2px 0 rgba($color_value, 0.14), 0 1px 5px 0 rgba($color_value, 0.12), 0 3px 1px -2px rgba($color_value, 0.2);
+            }
+          }
+        }
       }
     }
     @else if $color_name != "shades" {
@@ -470,7 +564,7 @@ $colors: (
       }
       .#{$color_name}-ghost.ghost-#{$color_type} {
         background: none !important;
-        border: 1px solid $color_value !important;
+        border: 2px solid $color_value !important;
         color: $color_value !important;
         &.btn:hover, &.btn.active, &.btn:focus {
           background: $color_value !important;
@@ -481,6 +575,34 @@ $colors: (
         color: $color_value !important;
         h1,h2,h3,h4,h5,h6 {
           color: $color_value !important;
+        }
+
+        &.nav {
+          a {
+            color: $color_value !important;
+
+            &.btn {
+              &.nav-btn-ghost {
+                background: none !important;
+                border: 2px solid $color_value !important;
+                color: $color_value !important;
+                &.btn:hover, &.btn.active, &.btn:focus {
+                  background: $color_value !important;
+                  color: lighten($color_value, 80%) !important;
+                }
+              }
+              &.nav-btn {
+                background: $color_value !important;
+                color: invert($color_value) !important;
+                border: 2px solid $color_value !important;
+                &:hover, &.active, &:focus {
+                  border: 2px solid invert($color_value) !important;
+                  background: invert($color_value) !important;
+                  color: $color_value !important;
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -493,9 +615,9 @@ $colors: (
     background-color: $color_value !important;
     &.btn {
       color: invert($color_value) !important;
-      border: 1px solid $color_value !important;
+      border: 2px solid $color_value !important;
       &:hover, &.active, &:focus {
-        border: 1px solid invert($color_value) !important;
+        border: 2px solid invert($color_value) !important;
         background: invert($color_value) !important;
         color: $color_value !important;
       }
@@ -503,7 +625,7 @@ $colors: (
   }
   .#{$color}-ghost {
     background: none !important;
-    border: 1px solid $color_value !important;
+    border: 2px solid $color_value !important;
     color: $color_value !important;
     &.btn:hover, &.btn.active, &.btn:focus {
       background: $color_value !important;
@@ -514,9 +636,9 @@ $colors: (
     background-color: $color_value !important;
     &.btn {
       color: color("primary", "base") !important;
-      border: 1px solid $color_value !important;
+      border: 2px solid $color_value !important;
       &:hover, &.active, &:focus {
-        border: 1px solid darken(color("primary", "base"), 20%) !important;
+        border: 2px solid darken(color("primary", "base"), 20%) !important;
         background: darken(color("primary", "base"), 20%) !important;
         color: $color_value !important;
       }
@@ -524,7 +646,7 @@ $colors: (
   }
   .#{$color}-ghost-primary {
     background: none !important;
-    border: 1px solid $color_value !important;
+    border: 2px solid $color_value !important;
     color: $color_value !important;
     &.btn:hover, &.btn.active, &.btn:focus {
       background: $color_value !important;
@@ -533,5 +655,33 @@ $colors: (
   }
   .#{$color}-text {
     color: $color_value !important;
+
+    &.nav {
+      a {
+        color: $color_value !important;
+
+        &.btn {
+          &.nav-btn-ghost {
+            background: none !important;
+            border: 2px solid $color_value !important;
+            color: $color_value !important;
+            &.btn:hover, &.btn.active, &.btn:focus {
+              background: $color_value !important;
+              color: invert($color_value) !important;
+            }
+          }
+          &.nav-btn {
+            background: $color_value !important;
+            color: invert($color_value) !important;
+            border: 2px solid $color_value !important;
+            &:hover, &.active, &:focus {
+              border: 2px solid invert($color_value) !important;
+              background: invert($color_value) !important;
+              color: $color_value !important;
+            }
+          }
+        }
+      }
+    }
   }
 }

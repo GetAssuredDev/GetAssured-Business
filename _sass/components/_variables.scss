@@ -199,6 +199,7 @@ $large-screen-up: 1201px !default;
 $small-screen: 600px !default;
 $medium-screen: 992px !default;
 $large-screen: 1200px !default;
+$large-limit: 1440px !default;
 
 $medium-and-up: "only screen and (min-width : #{$small-screen-up})" !default;
 $large-and-up: "only screen and (min-width : #{$medium-screen-up})" !default;
@@ -279,13 +280,19 @@ $toast-text-color: #fff !default;
 // 20. Typography
 // ==========================================================================
 
-$base-font: 'Roboto', sans-serif;
+$base-font: 'Open Sans', sans-serif;
 $headline-font: 'Open Sans', sans-serif;
 $off-black: color("brand-black", "base") !default;
 
 //letter spacing
 $base-letter-spacing: 0.1px;
 $italic-letter-spacing: 0.2px;
+
+$xs-fontsize: 14px;
+$s-fontsize: 16px;
+$m-fontsize: 16px;
+$l-fontsize: 16px;
+
 // Header Styles
 $h1-fontsize: 4rem !default;
 $h2-fontsize: 3rem !default;

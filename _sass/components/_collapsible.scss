@@ -88,14 +88,34 @@
 .features-accordion {
   border-top: 0;
   @extend .z-depth-0;
-  margin-bottom: 0;
+  margin: 0;
+  font-size: 1.2rem;
+
+  .btn {
+    font-size: 1rem;
+  }
+
   .collapsible-header {
     position: relative;
-    padding: 4rem 0;
+    padding: 0;
     line-height: 200%;
     border-bottom: 0;
-    z-index: 2;
     transition: all .2s !important;
+
+    .row {
+      margin-bottom: 0;
+    }
+
+    .collapse-header-content {
+      background: center center no-repeat;
+      background-size: cover;
+      padding: 4rem 0;
+      min-height: 400px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
   }
 
   .collapsible-body {
@@ -110,7 +130,6 @@
     }
 
     .collapse-content {
-      min-height: 400px;
       padding: 4rem 0;
       background: center center no-repeat;
       background-size: cover;
@@ -121,11 +140,61 @@
     }
   }
 
+  // li {
+  //   &:nth-child(even) {
+  //     .collapsible-header {
+  //       background-color:color("brand-white", "darken-1");
+  //     }
+  //     .collapsible-body {
+  //       background-color:color("brand-white", "darken-1");
+  //     }
+  //   }
+  // }
+}
+
+.faq-accordion {
+  border: none;
+  margin-bottom: 4rem;
+  @extend .z-depth-0;
+
+  @media #{$small-and-down} {
+    padding-left: 2rem;
+  }
+
   li {
-    &:nth-child(even) {
-      .collapsible-header {
-        background-color:color("brand-white", "darken-1");
+    margin-bottom: 1rem;
+  }
+
+  .collapsible-header {
+    border: none;
+    font-size: 1.2rem;
+    &:after {
+      position: relative;
+      font-family: 'Material Icons';
+      content: "keyboard_arrow_down";
+      -webkit-font-feature-settings: 'liga';
+      margin-left: 1rem;
+      top: 0.2rem;
+    }
+    &.active {
+      &:after {
+        content: "keyboard_arrow_up";
       }
     }
+  }
+
+  .collapsible-body {
+    border: none;
+
+     ul {
+       ul {
+         margin-left: 1.5rem;
+         margin-top: 1rem;
+         li {
+           list-style-type: circle;
+           margin-bottom: 0.5rem;
+         }
+       }
+     }
   }
 }

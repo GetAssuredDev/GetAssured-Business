@@ -1,11 +1,47 @@
 section {
-  min-height: 400px;
   padding: 4rem 0;
 
   &.image-section {
     height: 600px;
     background: center center no-repeat;
     background-size: cover;
+
+    @media only screen and (max-width: $small-screen) {
+      height: 400px;
+    }
+
+    &.mobile-left {
+      @media only screen and (max-width: $small-screen) {
+        background-position: left center;
+      }
+    }
+    &.mobile-right {
+      @media only screen and (max-width: $small-screen) {
+        background-position: right center;
+      }
+    }
+  }
+
+  &.benefits-section {
+    background: bottom center no-repeat;
+    background-size: auto 750px;
+    background-image: url('assets/images/get-assured-benefits-bg.png');
+    padding-bottom: 650px;
+
+    @media only screen and (max-width: $medium-screen) {
+      padding-bottom: 450px;
+      background-size: auto 550px;
+    }
+
+    @media only screen and (max-width: $small-screen) {
+      padding-bottom: 300px;
+      background-size: auto 400px;
+    }
+
+    @media only screen and (min-width: $large-limit) {
+      padding-bottom: 42%;
+      background-size: 100% auto;
+    }
   }
 }
 

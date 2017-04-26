@@ -7,15 +7,19 @@ html{
   line-height: 1.6;
 
   @media only screen and (min-width: 0) {
-    font-size: 14px;
+    font-size: $xs-fontsize;
+  }
+
+  @media only screen and (min-width: $small-screen) {
+    font-size: $s-fontsize;
   }
 
   @media only screen and (min-width: $medium-screen) {
-    font-size: 15px;
+    font-size: $m-fontsize;
   }
 
   @media only screen and (min-width: $large-screen) {
-    font-size: 16px;
+    font-size: $l-fontsize;
   }
 
   font-family: $base-font;
@@ -52,7 +56,9 @@ strong { font-weight: 500; }
 small { font-size: 75%; }
 .light { font-weight: 300; }
 .thin { font-weight: 200; }
-
+.font-up-1 { font-size: 1.2rem; }
+.font-up-2 { font-size: 1.4rem; }
+.font-up-3 { font-size: 1.6rem; }
 
 .flow-text{
   font-weight: 300;
@@ -80,4 +86,36 @@ small { font-size: 75%; }
 
 .double-lined {
   line-height: 200%;
+}
+
+.article {
+  -webkit-columns: 2 200px;
+     -moz-columns: 2 200px;
+          columns: 2 200px;
+
+  h1, h2, h3, h4, h5, h6:first-of-type {
+    margin-top: 0;
+  }
+
+  p, dl {
+    &:first-child {
+      margin-top: 0;
+    }
+
+    dt {
+      margin-top: 1rem;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  // h1, h2, h3, h4, h5, h6 {
+  //   -webkit-column-span: all;
+  //           column-span: all;
+  // }
+}
+
+strong {
+  font-weight: 700;
 }

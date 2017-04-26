@@ -2,24 +2,32 @@
 layout: default
 ---
 
-  <header class="hero home animated zoomInFade">
-    <div class="container v-align">
+  <header id="homeHero" class="hero home animated zoomInFade" data-vide-bg="mp4: assets/videos/getassured-biz-bg.mp4, webm: assets/videos/getassured-biz-bg.webm, poster: assets/images/getassured-biz-bg-mobile
+  .jpg"
+  data-vide-options="posterType: jpg, loop: true, muted: true, position: 0% 0%, className: videbg">
+  <!-- Header overlay so we can see the nav clearer -->
+  <div class="header-overlay"></div>
+    <div class="container">
       <div class="row">
-        <div class="col s12 m7 offset-m5">
-          <h1 class="animated fadeInUp animation-delay-8">Reimagine Employee Benefits</h1>
-          <h4 class="regular one-point-eight-lined animated fadeInUp animation-delay-12">The answer to happy, healthy and productive employees begins with us.</h4>
-          <p style="margin-top: 4rem" class="animated fadeInUp animation-delay-20">
-            <a href="#" class="btn brand-red-ghost"><i class="material-icons left">play_circle_filled</i>Learn More</a>
-            <a href="#" class="btn primary">Get Brochure</a>
-          </p>
+        <div class="col s12 m6">
+          <h1 class="brand-black-text animated fadeInUp animation-delay-8">Reimagine Employee Benefits</h1>
+          <h4 class="brand-black-text regular one-point-eight-lined animated fadeInUp animation-delay-12">The answer to happy, healthy <br />and productive employees <br />begins with us.</h4>
+          {% include hero-buttons.html %}
         </div>
       </div>
     </div>
-    <div class="to-bottom animated fadeIn animation-delay-28">
-      <h5 class="center-align">Find out how we can help you achieve better harmony at work.</h5>
-      <p class="center-align"><a href="#features"><i class="material-icons animation loop float">keyboard_arrow_down</i></a></p>
-    </div>
+    <div class="white-fade-left"></div>
+    <div class="white-fade"></div>
   </header>
+  <div class="white margin-bottom-2">
+    <div class="animated fadeIn animation-delay-28">
+      <div class="container">
+        <h5 class="center-align">Find out how we can help you achieve better harmony in the workplace.</h5>
+        <p class="center-align hide-on-small-only"><a href="#features"><i class="material-icons animation loop float">keyboard_arrow_down</i></a></p>
+      </div>
+    </div>
+  </div>
+  {% include video-modal.html %}
   <ul id="features" class="collapsible features-accordion scrollspy" data-collapsible="accordion">
     {% for section in page.sections %}
       {% assign mod = forloop.index | modulo: 2 %}
@@ -27,14 +35,10 @@ layout: default
         <!-- layout for odd numbered  -->
         <li>
           <div class="collapsible-header" id="{{ section.id  | textilize }}Head">
-            <div class="container">
-              <div class="row">
-                <div class="col s12 m6 push-m6">
-                  <div class="screenshot">
-                    <img src="{{ section.screen | absolute_url }}" class="responsive-img materialboxed">
-                  </div>
-                </div>
-                <div class="col s12 m5 pull-m6">
+            <div class="row flex-row">
+              <div class="col s12 m6 push-m6 collapse-header-content" style="background-image: url({{ section.image | prepend: site.baseurl }})"></div>
+              <div class="col s12 m5 pull-m6 collapse-header-content">
+                <div class="container">
                   <h3>{{ section.title  | textilize }}</h3>
                   <p>{{ section.content  | textilize }}</p>
                   <a href="#!" class="btn primary-ghost">Read More</a>
@@ -43,15 +47,19 @@ layout: default
             </div>
           </div>
           <div class="collapsible-body" id="{{ section.id  | textilize }}Body" >
-            <div class="row flex-row">
-              <div class="col s12 m6 collapse-content" style="background-image: url({{ section.image | absolute_url }})"></div>
-              <div class="col s12 m6 collapse-content grey lighten-4">
-                <div class="container">
+            <div class="container">
+              <div class="row">
+                <div class="col s12 m5 push-m7 collapse-content">
                   {% for point in section.points %}
                     <div class="collapse-list">
-                      <h6>{{ point.content  | textilize }}</h6>
+                      <p>{{ point.content  | textilize }}</p>
                     </div>
                   {% endfor %}
+                </div>
+                <div class="col s12 m6 pull-m6 offset-m1 collapse-content">
+                  <div class="screenshot">
+                    <img src="{{ section.screen | prepend: site.baseurl }}" class="responsive-img materialboxed">
+                  </div>
                 </div>
               </div>
             </div>
@@ -61,14 +69,10 @@ layout: default
         <!-- layout for even numbered  -->
         <li>
           <div class="collapsible-header" id="{{ section.id  | textilize }}Head">
-            <div class="container">
-              <div class="row">
-                <div class="col s12 m6">
-                  <div class="screenshot">
-                    <img src="{{ section.screen | absolute_url }}" class="responsive-img materialboxed">
-                  </div>
-                </div>
-                <div class="col s12 m5 offset-m1">
+            <div class="row flex-row">
+              <div class="col s12 m6 collapse-header-content" style="background-image: url({{ section.image | prepend: site.baseurl }})"></div>
+              <div class="col s12 m5 offset-m1 collapse-header-content">
+                <div class="container">
                   <h3>{{ section.title  | textilize }}</h3>
                   <p>{{ section.content  | textilize }}</p>
                   <a href="#!" class="btn primary-ghost">Read More</a>
@@ -77,17 +81,21 @@ layout: default
             </div>
           </div>
           <div class="collapsible-body" id="{{ section.id  | textilize }}Body" >
-            <div class="row flex-row">
-              <div class="col s12 m6 collapse-content grey lighten-4">
-                <div class="container">
+            <div class="container">
+              <div class="row">
+                <div class="col s12 m5 collapse-content">
                   {% for point in section.points %}
                     <div class="collapse-list">
-                      <h6>{{ point.content  | textilize }}</h6>
+                      <p>{{ point.content  | textilize }}</p>
                     </div>
                   {% endfor %}
                 </div>
+                <div class="col s12 m6 offset-m1 collapse-content">
+                  <div class="screenshot">
+                    <img src="{{ section.screen | prepend: site.baseurl }}" class="responsive-img materialboxed">
+                  </div>
+                </div>
               </div>
-              <div class="col s12 m6 collapse-content" style="background-image: url({{ section.image | absolute_url }})"></div>
             </div>
           </div>
         </li>
@@ -95,17 +103,13 @@ layout: default
     {% endfor %}
   </ul>
   {% include cta.html %}
-  <section class="image-section" style="background-image: url({{ "/assets/images/get-assured-we-bg-4.jpg" | absolute_url }})"></section>
+  <section class="image-section" style="background-image: url({{ "/assets/images/get-assured-contact-bg.jpg" | prepend: site.baseurl }})"></section>
   <section class="primary white-text">
     <div class="container">
       <div class="row">
         <div class="col m6">
           <h3>We are GetAssured</h3>
           <h5 class="italic" style="margin-top: 1rem">"We believe in helping you achieve a happier workforce without breaking the bank."</h5>
-          <p>GetAssured for Business is Singapore's first life insurance based employee benefits portal. We started with one sole purpose: to empower companies to value-add to their employees at no cost.</p>
-        </div>
-        <div class="col m6">
-          <p>With almost two decades of combined experience in the employee benefits and life insurance industry, our team is committed to helping employers take better care of your employees at no additional cost so you can focus on what you do best - building and growing your business.</p>
         </div>
       </div>
       <a href="{{ site.baseurl }}/why-us" class="btn white-ghost-primary">Learn More</a>

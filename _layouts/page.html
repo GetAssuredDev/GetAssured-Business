@@ -2,16 +2,28 @@
 layout: default
 ---
 
-<header class="hero {{ page.pagename }} animated zoomInFade">
-  <div class="container v-align">
-    <div class="row">
-      <div class="col s12 m6">
-        <h2 class="grey-text animated fadeInUp animation-delay-2">{{ page.header }}</h2>
-        <p style="margin-top: 2rem" class="animated fadeInUp animation-delay-6">
-          <a href="#" class="btn grey-ghost">Get Brochure</a>
-        </p>
+{% include page-header.html %}
+<section class="main-content">
+  <div class="container">
+    {{ content }}
+  </div>
+</section>
+{% for section in page.sections %}
+  <section class="sub-content {{ section.class }}">
+    <div class="container">
+      <h3 class="white-text">{{ section.title  | textilize }}</h3>
+      <div class="row flex-row">
+        {% for point in section.points %}
+          <div class="col s12 m6">
+            <div>
+              <h5>{{ point.title  | textilize }}</h5>
+              <p>{{ point.content  | textilize }}</p>
+            </div>
+          </div>
+        {% endfor %}
       </div>
     </div>
-  </div>
-</header>
-{{ content }}
+  </section>
+{% endfor %}
+{% include cta.html %}
+<section class="image-section {{ page.imageBreakClass }}" style="background-image: url({{ page.imageBreak | prepend: site.baseurl }})"></section>

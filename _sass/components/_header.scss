@@ -1,9 +1,11 @@
 header {
+  position: relative;
   padding-top: $navbar-height;
   height: 30rem;
 
   .container {
     position: relative;
+    z-index: 3;
   }
 
   .to-bottom {
@@ -17,24 +19,74 @@ header {
   }
 
   &.home {
-    height: 100vh;
+    padding-top: $navbar-height*2;
+    min-height: 90vh;
+    height: auto;
     background: center center no-repeat;
-    background-image:
-      linear-gradient(to bottom, rgba(white, 0), rgba(white, 1)),
-      linear-gradient(to right, rgba(white, 0), rgba(white, 0.8)),
-      url('assets/images/get-assured-home-bg.jpg');
+    background-image: url('assets/images/getassured-biz-bg.jpg');
     background-size: cover;
+    color: white;
+    padding-bottom: 1rem;
     @media only screen and (max-width: $medium-screen) {
       min-height: 100vh;
       height: auto;
+    }
+    @media only screen and (max-width: $small-screen) {
+      padding-top: $navbar-height*1.5;
+    }
+    .white-fade {
+      position: absolute;
+      bottom: 0;
+      z-index: 1;
+      height: $navbar-height*1.5;
+      width: 100%;
+      background: linear-gradient(to top, rgba(white, 1), rgba(white, 0));
+    }
+    .white-fade-left {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      height: 100%;
+      width: 60%;
+      background: linear-gradient(to right, rgba(white, 0.8), rgba(white, 0));
+
+      @media only screen and (max-width: $small-screen) {
+        width: 100%;
+        background: linear-gradient(to right, rgba(white, 0.8), rgba(white, 0.05));
+      }
     }
   }
 
   &.about {
     background: center center no-repeat;
-    background-image:
-      linear-gradient(to bottom, rgba(white, 1), rgba(white, 0)),
-      url('assets/images/get-assured-about-bg.jpg');
+    background-image: url('assets/images/get-assured-about-bg.jpg');
     background-size: cover;
+  }
+
+  &.faqs {
+    background: top center no-repeat;
+    background-image: url('assets/images/get-assured-faqs-bg.jpg');
+    background-size: cover;
+    color: white;
+  }
+
+  &.how-it-works {
+    background: center 25% no-repeat;
+    background-image: url('assets/images/get-assured-how-bg.jpg');
+    background-size: cover;
+  }
+}
+
+.header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: $navbar-height*3;
+  background: linear-gradient(to bottom, rgba(black, 0.6), rgba(black, 0));
+  z-index: 2;
+  @media only screen and (max-width: $small-screen) {
+    height: $navbar-height*1.5;
   }
 }
