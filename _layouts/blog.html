@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<header class="hero {{ page.pagename }} animated zoomInFade" style="background-image: url({{ page.image | prepend: site.baseurl }})">
+  <!-- Header overlay so we can see the nav clearer -->
+  <div class="header-overlay"></div>
+  <div class="container v-align">
+    <div class="row">
+      <div class="col s12 m6">
+        <h2 class="animated fadeInUp animation-delay-2">{{ page.header }}</h2>
+        <p style="margin-top: 2rem" class="animated fadeInUp animation-delay-6">
+        </p>
+      </div>
+    </div>
+  </div>
+</header>
+<section class="blog-body">
+  <div class="container">
+    <ul class="flex-row row">
+    {% for post in site.posts %}
+      <li class="col-card-container-2-1">
+        <div class="card">
+          <div class="card-image">
+            <img class="responsive-img" src="{{ post.image | prepend: site.baseurl }}">
+          </div>
+          <div class="card-content">
+            <h4>{{ post.title | truncate: 60 }}</h4>
+            <p class="font-down-1 margin-bottom-1 grey-text">{{ post.date | date_to_string }} | {{ post.content | reading_time_as_i }} read</p>
+            <p>{{ post.content | truncate: 160 }}</p>
+            <a class="btn primary-ghost margin-top-2" href="{{ post.url }}">Read More</a>
+          </div>
+        </div>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+</section>

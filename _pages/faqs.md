@@ -86,25 +86,12 @@ We will swing by your office at a time of your convenience to explain the setup 
 <li>
 <div class="collapsible-header">
 
-What is your financial literacy programme about?
+How long does it take to implement the portal for my company?
 
 </div>
 <div class="collapsible-body" markdown="1">
 
-We offer FREE financial literacy programmes to educate your employees on good financial habits. We know financially savvy employees create a win - win situation for both you and your staff - a happier, healthier workforce that generates more productivity and revenue.
-
-</div>
-</li>
-
-<li>
-<div class="collapsible-header">
-
-Does my company need to sign a contract?
-
-</div>
-<div class="collapsible-body" markdown="1">
-
-No contract is needed, as a complementary service, we are ready to start serving you and your employees from day 1!
+Once we have all the necessary details from your company, your portal will be ready within 10 working days.
 
 </div>
 </li>
@@ -138,9 +125,7 @@ How would my employees benefit?
 </div>
 <div class="collapsible-body" markdown="1">
 
-We provide up commission rebates for employees when they purchase their benefits through us, thereby helping them to get greater savings. Rather than the usual one-size-fits-all benefits programme, your employees would also be able to select the benefits that best suit their needs.
-
-In addition, we offer free financial literacy programmes to educate your employees on good financial habits, because we believe that financially savvy employees make happy employees.
+We provide commission rebates for employees when they purchase their benefits through us, thereby helping them to get greater savings. Rather than the usual one-size-fits-all benefits programme, your employees would also be able to select the benefits that best suit their needs.
 
 </div>
 </li>
@@ -204,7 +189,7 @@ When would my employees receive their rebates?
 </div>
 <div class="collapsible-body" markdown="1">
 
-After the policy has been incepted by the insurer, they will receive the rebates via cheque within 3 months.
+2 months upon receipt of premium, the rebates will be credited back to their GIRO account.
 
 </div>
 </li>
@@ -230,25 +215,12 @@ All the information provided will be kept strictly confidential and available on
 <li>
 <div class="collapsible-header">
 
-Will you provide our company with monthly reports on the benefits taken up by my employees?
-
-</div>
-<div class="collapsible-body" markdown="1">
-
-Yes, definitely! We will collate the data and send you a report at the end of the month so can monitor your employees benefits coverage.
-
-</div>
-</li>
-
-<li>
-<div class="collapsible-header">
-
 Who should I contact if we are facing technical faults on the website?
 
 </div>
 <div class="collapsible-body" markdown="1">
 
-Please contact our friendly support team at [hello@get-assured.co](mailto:hello@get-assured.co).
+Please contact our friendly support team at [business@get-assured.co](mailto:business@get-assured.co).
 
 </div>
 </li>
@@ -263,7 +235,7 @@ Can I cancel my subscription?
 
 We are sure you will like our service enough to keep us around, and continue to let us serve you and your employees!
 
-However, if for any reason you hope to suspend your company’s subscription with us, simply drop us an email at [hello@get-assured.co](mailto:hello@get-assured.co) to inform us on your decision and provide us with feedback so that we can improve further. 
+However, if for any reason you hope to suspend your company’s subscription with us, simply drop us an email at [business@get-assured.co](mailto:business@get-assured.co) to inform us on your decision and provide us with feedback so that we can improve further.
 
 </div>
 </li>

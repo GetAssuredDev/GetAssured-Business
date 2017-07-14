@@ -71,7 +71,7 @@ layout: default
           <div class="collapsible-header" id="{{ section.id  | textilize }}Head">
             <div class="row flex-row">
               <div class="col s12 m6 collapse-header-content" style="background-image: url({{ section.image | prepend: site.baseurl }})"></div>
-              <div class="col s12 m5 offset-m1 collapse-header-content">
+              <div class="col s12 m5 pull-m1 collapse-header-content">
                 <div class="container">
                   <h3>{{ section.title  | textilize }}</h3>
                   <p>{{ section.content  | textilize }}</p>

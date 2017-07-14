@@ -335,10 +335,16 @@ $progress-bar-color: $secondary-color !default;
 
 
 
-
-// Animations
+// 25. Animations
 // ==========================================================================
 
 $animation-delay-start: 0s;
 $animation-delay-increment: 0.1s;
 $animation-delay-limit: 50;
+
+// 26. Post
+// ==========================================================================
+
+$post-container-border-radius: 2px;
+$post-container-padding: 3rem;
+$post-container-padding-xs: 1.5rem;

@@ -38,5 +38,5 @@ sections:
     points:
     - content: We promise a fuss-free setup with minimal input from your side.
     - content: Our platform is delivered ready for your employees’ use.
-    - content: Clear-cut and easy-to-use features so your employees.
+    - content: Clear-cut and easy-to-use features.
 ---

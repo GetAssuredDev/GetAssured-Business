@@ -1,12 +1,16 @@
 # Site Settings
 title: GetAssured for Business
 email: hello@get-assured.co
-description: >
-  A guide to getting started with Jekyll.
+description: Singapore’s first life insurance based employee benefits portal. We believe in helping you achieve a happier workforce without breaking the bank.
 baseurl: ""
-url: "http://business.get-assured.co"
+url: http://business.get-assured.co
 twitter_username: getAssured
 github_username:  getAssured
+logo: /assets/images/get-assured-business-logo-white@3x.png
+social:
+    name: GetAssured for Business
+    links:
+      - https://www.linkedin.com/company-beta/13276163
 # Build Settings
 sass:
   sass_dir: _sass
@@ -16,6 +20,8 @@ kramdown:
 gems:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-time-to-read
 exclude:
   - Gemfile
   - Gemfile.lock

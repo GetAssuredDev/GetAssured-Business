@@ -374,6 +374,15 @@ $business-black: (
 "lighten-1": #08262C
 );
 
+// Social colors
+
+$social: (
+"facebook": #3b5998,
+"google": #dd4b39,
+"linkedin": #007bb5,
+"twitter": #1da1f2
+);
+
 $colors: (
   "primary": $business-blue,
   "secondary": $business-green,
@@ -382,6 +391,7 @@ $colors: (
   "brand-white": $business-white,
   "brand-black": $business-black,
   "materialize-red": $materialize-red,
+  "social": $social,
   "red": $red,
   "pink": $pink,
   "purple": $purple,
@@ -561,6 +571,19 @@ $colors: (
     @else if $color_name != "shades" {
       .#{$color_name}.#{$color_type} {
         background-color: $color_value !important;
+        &.btn {
+          border: 2px solid $color_value !important;
+          &:hover {
+            border: 2px solid adjust-hue(darken($color_value, 10%), 10deg) !important;
+            background: adjust-hue(darken($color_value, 10%), 10deg) !important;
+            box-shadow: 0 6px 10px 0 rgba($color_value, 0.14), 0 1px 18px 0 rgba($color_value, 0.12), 0 3px 5px -1px rgba($color_value, 0.3);
+          }
+          &.active, &:focus {
+            border: 2px solid adjust-hue(darken($color_value, 20%), 10deg) !important;
+            background: adjust-hue(darken($color_value, 20%), 10deg) !important;
+            box-shadow: 0 2px 2px 0 rgba($color_value, 0.14), 0 1px 5px 0 rgba($color_value, 0.12), 0 3px 1px -2px rgba($color_value, 0.2);
+          }
+        }
       }
       .#{$color_name}-ghost.ghost-#{$color_type} {
         background: none !important;

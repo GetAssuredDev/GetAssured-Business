@@ -191,3 +191,25 @@
     }
   }
 }
+
+//Responsive card container
+.col-card-container-3-2-1 {
+    @extend .col;
+    @extend .s12;
+    @extend .m6;
+    @extend .l4;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.col-card-container-2-1 {
+    @extend .col;
+    @extend .s12;
+    @extend .m6;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}

@@ -1,0 +1,67 @@
+.blog-body {
+  .row {
+    justify-content: center;
+    .col-card-container-3-2-1, .col-card-container-2-1 {
+      margin-left: 0;
+    }
+  }
+}
+
+.post-body {
+  background: color("grey", "lighten-5");
+  min-height: 70vh;
+  color: rgba(black, 0.87);
+  h1,h2,h3,h4,h5,h6 {
+    font-family: 'Crimson Text', serif;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .container {
+    max-width: 750px;
+    position: relative;
+    top: -16rem;
+    margin-bottom: -16rem;
+    background-color: white;
+    // @extend .z-depth-2;
+    padding: $post-container-padding;
+    border-radius: $post-container-border-radius;
+    border-color: color("grey", "lighten-2");
+    @extend .one-point-eight-lined;
+
+    @media only screen and (max-width: $small-screen) {
+      padding: $post-container-padding-xs;
+    }
+
+    .post-date {
+      color: color("grey", "darken-1");
+      font-family: 'Crimson Text', serif;
+      text-align: center;
+    }
+
+    ul {
+      margin-left: 2rem;
+      li {
+        list-style: disc;
+        ul {
+          margin-left: 1rem;
+          li {
+            list-style: circle;
+          }
+        }
+      }
+    }
+
+    ul.tag-list {
+      text-align: center;
+      li {
+        list-style: none;
+        display: inline-block;
+        margin: .2rem 0;
+        .chip {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
