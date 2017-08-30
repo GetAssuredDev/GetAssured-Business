@@ -70,3 +70,4 @@ Gеnеrаtіоnаl undеrstаndіng аnd аdарtаtіоn dоеs nоt tаkе th�
 
 
 
+
