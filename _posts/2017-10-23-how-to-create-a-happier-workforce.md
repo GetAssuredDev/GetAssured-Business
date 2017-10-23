@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title: How to Create a Happier Workforce
-date: 2017-10-04T15:22:59+08:00
+date: 2017-10-04T07:22:59.000Z
 image: /assets/images/How-to-Create-a-Happier-Workforce.jpg
 tags: workforce
 ---
@@ -19,3 +19,4 @@ Times are tough - firms are trying to maintain the happiness of their employees 
 - Food & Beverages. Which employee does not like food? Consider providing coffee, tea, and water to workers daily. You would be surprised how much people appreciate these things. Do you work in a building with a cafeteria? If you do, consider establishing a program where the food is subsidized. They say that food is comforting. It is especially so when employees get to eat at a reduced fee.
 
 These thoughts are worth their weight in gold, especially if you consider the high cost of employee turnover. Fostering longevity and commitment in the workplace will promote goodwill, stability, and a talent pool that remains able and willing to contribute to the corporate vision and growth.
+
