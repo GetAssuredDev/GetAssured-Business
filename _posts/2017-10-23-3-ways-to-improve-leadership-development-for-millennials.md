@@ -2,13 +2,11 @@
 layout: post
 comments: true
 title: 3 Ways to Improve Leadership Development for Millennials
-date: 2017-10-11T16:11:19+08:00
+date: 2017-10-11T08:11:19.000Z
 image: /assets/images/3-Ways-to-Improve-Leadership-Development-for-Millennials.jpg
 tags: 'leadership development millennials '
 ---
-**Half of the global workforce comprises of millennials or those in their 20s and early 30s.**
-
-****
+Half of the global workforce comprises of millennials or those in their 20s and early 30s.
 
 Even though perceived as becoming more technologically savvy than skilled, millennials are described as high achievers and team players.
 
@@ -18,13 +16,13 @@ All these variables make leadership development for millennials essential. Unfor
 
 Here are three tips for coaching millennials to become your company's next leaders.
 
-1) Keep Content Short and Relevant
+1. Keep Content Short and Relevant
 
 Millennials have been taught to be resourceful. Technology has trained this generation to skip the boring and irrelevant. That said, they are far from complacent. They are hungry to learn new skills that can help their careers advance.
 
 By keeping content concise, more time is allocated for learning job-specific material that impacts them. Short videos or task-relevant, scenario-based games which may be accessed during the time in work environments have also proven to be successful.
 
-2) Offer Frequent Feedback
+1. Offer Frequent Feedback
 
 Among the strongest distinguishing feedbacks on millennials, according to the PricewaterhouseCoopers survey, is the desire for praise and regular feedback for work well done. They do not just want feedbacks on where they could improve, they want input on what they are doing.
 
@@ -32,7 +30,7 @@ Companies that are effective at managing millennials will be those that set clea
 
 Using assessments that include responses from an assortment of people in the worker's sphere of influence, including direct reports and colleagues, is one way to ensure you're providing sufficient feedback to them.
 
-3) Make Training A Game
+1. Make Training A Game
 
 Self-directed learning applications can shorten the learning curve and better prepare millennials for leadership positions. You might consider offering prizes such as gift cards or vouchers tо асknоwlеdgе ехсерtіоnаl реrfоrmаnсе.
 
