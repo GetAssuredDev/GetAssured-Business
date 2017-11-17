@@ -4,7 +4,7 @@ comments: true
 title: 4 Reasons to Create a Positive Work Environment
 date: 2017-11-16T10:04:05.959Z
 image: /assets/images/4 Reasons to Create a Positive Work Environment.jpg
-tags: workenvironment
+tags: work environment
 ---
 What we do for a living is important but so is the environment that we choose to work in.
 
@@ -31,4 +31,5 @@ In general, employees that are confident about themselves will be more focused a
 Positivity is contagious - employees working in an encouraging environment will motivate and bring out the best of one another leading to higher efficiency.
 
 Happiness and productivity are largely correlated and everyone can contribute towards the building of a better working environment. Let each of us take baby steps to create a conducive place that encourages learning and growth!
+
 
