@@ -7,13 +7,13 @@ image: >-
   /assets/images/GetAssured-Christmas-Giveaway-Find-out-how-to-win-$50-Grab-credits-from-us!.jpg
 tags: seasonsgreetings
 ---
-![null](/assets/images/GetAssured-Christmas-Giveaway-Find-out-how-to-win-$50-Grab-credits-from-us2!.jpg)
-
 Hello there! We’re glad you found your way to this page.
 
 **\*Currently this giveaway is only open to employees whose companies are using GetAssured.\***
 
 If your company is not with us yet and you would like to take part in this Christmas Giveaway, just link us up with your HR and we would do the rest!
+
+![null](/assets/images/GetAssured-Christmas-Giveaway-Find-out-how-to-win-$50-Grab-credits-from-us2!.jpg)
 
 Read on to find out more about the $50 Grab credits Christmas giveaway.
 
