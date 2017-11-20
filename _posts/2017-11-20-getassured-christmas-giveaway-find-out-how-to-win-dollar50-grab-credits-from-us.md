@@ -66,3 +66,4 @@ Hurry and log in now as this giveaway^ is only valid for the first 10 users that
 15. For avoidance of doubt, entrants must provide personal data via the online requests forms, in order to participate in the giveaway contest. By voluntarily providing Trunk Tech Pte Ltd. with personal details, the entrant has voluntarily initiated a communication relationship with Trunk Tech Pte Ltd.  and has deemed consent to receive information, such as, but not limited to Winner Notifications, from Trunk Tech Pte Ltd. through SMS, email, or other forms of communications. By initiating contact with Trunk Tech Pte Ltd. through the online form, entrants have deemed consent for the advisor to contact them via SMS or telephone calls for future notifications regardless of whether the entrant’s number is listed on Singapore’s “Do Not Call” Registry or not.
 
 16. Any queries regarding the giveaway should be addressed to hello@get-assured.co
+
