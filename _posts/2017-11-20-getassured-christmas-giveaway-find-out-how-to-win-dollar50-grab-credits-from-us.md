@@ -19,9 +19,7 @@ If your company is not with us yet and you would like to take part in this Chris
 
 Just follow the 3 steps below to be eligible for this giveaway^:
 
-1\.     Login to your account on GetAssured
-
-\(Psst. Activate your account if you haven’t already done so. Head over to your email for the link!)
+1\.     Login to your account on GetAssured* (Psst. Activate your account if you haven’t already done so. Head over to your email for the link!)*
 
 2\.     Give our platform a whirl and leave a request to speak to an advisor
 
@@ -41,7 +39,7 @@ Hurry and log in now as this giveaway^ is only valid for the first 10 users that
  7. Grab credits are non-refundable and non-exchangeable for cash.
  8. Representatives of Trunk Tech Pte Ltd. will notify the Christmas giveaway winners. No correspondence will be entertained about Trunk Tech Pte Ltd. decision.
  9. The winner will be notified details of collection by email. If a winner does not respond to Trunk Tech Pte Ltd. within 14 days of being notified by Trunk Tech Pte Ltd., and/or if a winner rejects their prize or the entry is invalid or in breach of these Terms and Conditions, the winner's prize will be forfeited and Trunk Tech Pte Ltd. shall be entitled to giveaway the prize to the next valid entry.
-10. Please see privacy policy of Trunk Tech Pte Ltd. for more details.
+10. Please see [privacy policy](https://app.get-assured.co/pages/privacy_policy) of Trunk Tech Pte Ltd. for more details.
 11. Acceptance of the prize shall constitute consent on the winner’s part, to allow the use of the winner’s entry, names, images, video footage, voices and/or likeness by Trunk Tech Pte Ltd. for editorial, advertising, promotional, marketing and/or other purposes, without further compensation, in any media for an unlimited period of time, except where prohibited by law.
 12. Trunk Tech Pte Ltd. may vary these terms and conditions without notice, or withdraw or discontinue this Christmas giveaway at any time without any notice or liability to you.
 13. Decision made by Trunk Tech Pte Ltd. on all matters relating to this Christmas giveaway shall be final and binding. No appeals will be entertained.
