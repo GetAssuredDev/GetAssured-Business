@@ -9,7 +9,7 @@ tags: seasonsgreetings
 ---
 Hello there! We’re glad you found your way to this page.
 
-\*Currently this giveaway is only open to employees whose companies are using GetAssured.\*
+\*\*Currently this giveaway is only open to employees whose companies are using GetAssured.
 
 If your company is not with us yet and you would like to take part in this Christmas Giveaway, just link us up with your HR and we would do the rest!
 
@@ -17,7 +17,7 @@ If your company is not with us yet and you would like to take part in this Chris
 
 **Read on to find out more about the $50 Grab credits Christmas giveaway.**
 
-Just follow the 3 steps below to be eligible for this giveaway\*:
+Just follow the 3 steps below to be eligible for this giveaway^:
 
 1\.     Login to your account on GetAssured
 
@@ -29,7 +29,7 @@ Just follow the 3 steps below to be eligible for this giveaway\*:
 
 Hurry and log in now as this giveaway^ is only valid for the first 10 users that manage to meet-up with our advisors!
 
-^Terms and Conditions
+**^Terms and Conditions**
 
  1. The Christmas giveaway period is valid from 22 November 2017 to 31 January 2018 (both dates inclusive).
  2. The Christmas giveaway is open to people aged 21 and over who leave their contact details down on GetAssured’s Analyse and Compare page and successfully meet the financial advisor before 31 January 2018.
