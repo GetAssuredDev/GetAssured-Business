@@ -19,13 +19,13 @@ If your company is not with us yet and you would like to take part in this Chris
 
 Just follow the 3 steps below to be eligible for this giveaway^:
 
-1\.     Login to your account on GetAssured* (Psst. Activate your account if you haven’t already done so. Head over to your email for the link!)*
+1\.     Login to your account on GetAssured *(Psst. Activate your account if you haven’t already done so. Head over to your email for the link!)*
 
 2\.     Give our platform a whirl and leave a request to speak to an advisor
 
 3\.     Meet up with our advisor before 31 January 2018
 
-Hurry and log in now as this giveaway^ is only valid for the first 10 users that manage to meet-up with our advisors!
+Hurry and log in now as this giveaway^ is only valid for the first 10 users that  meet-up with our advisors!
 
 **^Terms and Conditions**
 
