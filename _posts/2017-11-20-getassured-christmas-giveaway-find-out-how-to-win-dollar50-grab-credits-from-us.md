@@ -34,8 +34,7 @@ Hurry and log in now as this giveaway^ is only valid for the first 10 users that
  3. Entrants into the Christmas giveaway shall be deemed to have accepted these Terms and Conditions.
  4. Only one entry per person. Entries on behalf of another person will not be accepted and joint submissions are not allowed.
  5. GetAssured is an initiative of Trunk Tech Pte Ltd.
- 6. Trunk Tech Pte Ltd. accepts no responsibility for entries that are lost, delayed, misdirected,  incomplete, cannot be delivered or\
-    entered for any technical or other reason. Proof of delivery of the entry is not proof of receipt by Trunk Tech Pte Ltd.
+ 6. Trunk Tech Pte Ltd. accepts no responsibility for entries that are lost, delayed, misdirected,  incomplete, cannot be delivered or entered for any technical or other reason. Proof of delivery of the entry is not proof of receipt by Trunk Tech Pte Ltd.
  7. Grab credits are non-refundable and non-exchangeable for cash.
  8. Representatives of Trunk Tech Pte Ltd. will notify the Christmas giveaway winners. No correspondence will be entertained about Trunk Tech Pte Ltd. decision.
  9. The winner will be notified details of collection by email. If a winner does not respond to Trunk Tech Pte Ltd. within 14 days of being notified by Trunk Tech Pte Ltd., and/or if a winner rejects their prize or the entry is invalid or in breach of these Terms and Conditions, the winner's prize will be forfeited and Trunk Tech Pte Ltd. shall be entitled to giveaway the prize to the next valid entry.
