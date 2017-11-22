@@ -30,7 +30,7 @@ Hurry and log in now as this giveaway^ is only valid for the first 10 users that
 **^Terms and Conditions**
 
  1. The Christmas giveaway period is valid from 22 November 2017 to 31 January 2018 (both dates inclusive).
- 2. The Christmas giveaway is open to people aged 21 and over who leave their contact details down on GetAssured’s Analyse and Compare page and successfully meet the financial advisor before 31 January 2018.
+ 2. The Christmas giveaway is open to people aged 21 and over who leave their contact details down to meet an advisor.
  3. Entrants into the Christmas giveaway shall be deemed to have accepted these Terms and Conditions.
  4. Only one entry per person. Entries on behalf of another person will not be accepted and joint submissions are not allowed.
  5. GetAssured is an initiative of Trunk Tech Pte Ltd.
