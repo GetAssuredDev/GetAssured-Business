@@ -13,7 +13,7 @@ Hello there! We’re glad you found your way to this page.
 
 If your company is not with us yet and you would like to take part in this Christmas Giveaway, just link us up with your HR and we would do the rest!
 
-![null](/assets/images/Christmas Giveaway.png)
+![null](/assets/images/Christmas Giveaway (1).png)
 
 **Read on to find out more about the $50 Grab credits Christmas giveaway.**
 
