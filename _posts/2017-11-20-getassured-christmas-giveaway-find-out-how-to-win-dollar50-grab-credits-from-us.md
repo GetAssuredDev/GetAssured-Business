@@ -11,9 +11,9 @@ Hello there! We’re glad you found your way to this page.
 
 \*\*Currently this giveaway is only open to employees whose companies are using GetAssured.
 
-If your company is not with us yet and you would like to take part in this Christmas Giveaway, just link us up with your HR and we would do the rest!
+If your company is not with us yet and you would like to take part in this Christmas Giveaway, just sign up ***[here](https://docs.google.com/forms/d/e/1FAIpQLSdcKpDsnZcderFk3RJeSFMsU8X7lOOEnnj0PF_pA4CEPmYGLw/viewform?c=0&w=1)***!
 
-![null](/assets/images/Christmas Giveaway (1).png)
+!\[null\](/assets/images/Christmas Giveaway (1).png)
 
 **Read on to find out more about the $50 Grab credits Christmas giveaway.**
 
