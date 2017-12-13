@@ -25,7 +25,7 @@ layout: default
           </div>
           <div class="card-content">
             <h4>{{ post.title | truncate: 60 }}</h4>
-            <p class="font-down-1 margin-bottom-1 grey-text">{{ post.date | date_to_string }} | {{ post.content | reading_time_as_i }} read</p>
+            <p class="font-down-1 margin-bottom-1 grey-text">{{ post.date | date_to_string }}</p>
             <p>{{ post.content | truncate: 160 }}</p>
             <a class="btn primary-ghost margin-top-2" href="{{ post.url }}">Read More</a>
           </div>
