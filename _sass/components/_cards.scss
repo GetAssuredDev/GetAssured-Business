@@ -228,8 +228,17 @@
       display: inline-block;
 
       .card-image{
-        width: 25%;
+        margin-left: 10px;
         display: inline-block;
+        width: 285px;
+        height: 160px;
+
+        @media #{$medium-and-down} {
+          width: 285px;
+          height: 160px;
+          margin-top: 10px;
+          margin-left: 25px;
+        }
       }
 
       .card-content{

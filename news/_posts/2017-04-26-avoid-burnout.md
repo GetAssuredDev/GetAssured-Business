@@ -3,7 +3,6 @@ title: How Your Company Can Avoid Aiding In Employee Burnout
 image: "/assets/images/how-your-company-can-avoid-aiding-in-employee-burnout.jpg"
 layout: post
 comments: true
-categories: blog
 tags:
 - tips
 - employee wellness

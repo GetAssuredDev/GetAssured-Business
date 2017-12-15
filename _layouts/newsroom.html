@@ -29,6 +29,9 @@ layout: default
             <p>{{ post.content | truncate: 100 }}</p>
             <a class="btn primary-ghost margin-top-2" href="{{ post.url }}">Read More</a>
           </div>
+          <!-- <div class="card-image"> -->
+            <!-- <img class="responsive-img" src="{{ post.image | prepend: site.baseurl }}"> -->
+          <!-- </div> -->
         </div>
       </li>
     {% endfor %}
