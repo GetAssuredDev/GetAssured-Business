@@ -18,7 +18,7 @@ layout: default
   <div class="container">
     <ul class="flex-row row">
     {% for post in site.categories.news %}
-      <li class="col-card-container-2-1">
+      <li class="col-card-container-1">
         <div class="card">
           <div class="card-image">
             <img class="responsive-img" src="{{ post.image | prepend: site.baseurl }}">
@@ -26,7 +26,7 @@ layout: default
           <div class="card-content">
             <h4>{{ post.title | truncate: 60 }}</h4>
             <p class="font-down-1 margin-bottom-1 grey-text">{{ post.date | date_to_string }}</p>
-            <p>{{ post.content | truncate: 160 }}</p>
+            <p>{{ post.content | truncate: 100 }}</p>
             <a class="btn primary-ghost margin-top-2" href="{{ post.url }}">Read More</a>
           </div>
         </div>

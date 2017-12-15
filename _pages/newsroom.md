@@ -2,7 +2,7 @@
 layout: newsroom
 title: GetAssured for Business | Newsroom
 permalink: /newsroom
-header: News
+header: Newsroom
 pagename: news
 image: /assets/images/get-assured-we-bg-2.jpg
 ---

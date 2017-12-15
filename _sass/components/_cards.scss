@@ -213,3 +213,27 @@
     display: -ms-flexbox;
     display: flex;
 }
+
+.col-card-container-1 {
+    @extend .col;
+    @extend .s12;
+    @extend .m12;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    .card{
+      width: 100%;
+      display: inline-block;
+
+      .card-image{
+        width: 25%;
+        display: inline-block;
+      }
+
+      .card-content{
+        display: inline-block;
+      }
+    }
+}
