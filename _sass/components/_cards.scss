@@ -232,6 +232,7 @@
         display: inline-block;
         width: 285px;
         height: 160px;
+        margin-bottom: 25px;
 
         @media #{$medium-and-down} {
           width: 285px;
@@ -243,6 +244,11 @@
 
       .card-content{
         display: inline-block;
+        margin-top: 25px;
+
+        @media #{$medium-and-down} {
+          margin-top: 25px;
+        }
       }
     }
 }

@@ -4,5 +4,5 @@ title: GetAssured for Business | Newsroom
 permalink: /newsroom
 header: Newsroom
 pagename: news
-image: /assets/images/get-assured-we-bg-2.jpg
+image: /assets/images/get-assured-news.jpg
 ---
