@@ -4,7 +4,7 @@ comments: true
 title: Take 5 Minutes to Organise Your Work Environment
 date: 2018-02-07T06:13:19.504Z
 image: /assets/images/Take-5-Minutes-to-Organise-Your-Work-Environment.jpg
-tags: '"work environment" desk'
+tags: work environment desk
 ---
 The first thing most people do when they reach the office is to turn their computer on and start on their job or surf the internet. Sometimes we get frustrated at work not because of the workload but the work environment. If you do most of your work at a fixed location, then spending some time to clean your work environment can assist you with additional clarity before you begin working.
 
@@ -29,4 +29,5 @@ Use sticky notes in moderation. If you are going to stick post-its all around yo
 Although it does not seem like you can do a lot in five minutes, every small step counts. Focus on clearing one part of your work desk daily and you will be surprised to find that there are actually additional space that you can create for yourself. Make it a habit and you will have an easy time organising your work environment! More importantly, a cluster free work environment helps you to focus and increase productivity.
 
 Take 5 minutes break and start clearing away now! 
+
 
