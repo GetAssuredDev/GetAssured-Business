@@ -8,7 +8,7 @@ sections:
     title: Personalised benefits.
     content: Be a super employer by giving your employees the benefits they truly need.
     screen: /assets/images/screen-01.png
-    image: /assets/images/get-assured-we-bg-3.jpg
+    image: /assets/images/family.png
     points:
     - content: Employees get to select their own insurance coverage instead of being on a one size fits all programme.
     - content: Through our Analysis feature, employees can easily ascertain the amount of coverage they need.
@@ -17,7 +17,7 @@ sections:
     title: Reduced spend, greater value.
     content: We help you value-add to your employees with attractive commission rebates.
     screen: /assets/images/screen-02.png
-    image: /assets/images/get-assured-we-bg-5.jpg
+    image: /assets/images/employee.png
     points:
     - content: We provide commission  rebate for your employees when they purchase their coverage through us.
     - content: Employees get great savings and you get to deliver greater and more impactful value to your employees.
@@ -25,7 +25,7 @@ sections:
     title: Zero-cost implementation.
     content: Why spend on unnecessary setup and subscription fees? We promise to charge no fees, forever.
     screen: /assets/images/screen-03.png
-    image: /assets/images/get-assured-we-bg-6.jpg
+    image: /assets/images/piggy-bank.png
     points:
     - content: Value add to your employees by providing them an easy to use portal to complete their insurance purchase.
     - content: There’s no subscription fees involved, we make it free for companies to adopt our platform.
@@ -34,7 +34,7 @@ sections:
     title: Hassle-free setup.
     content: Deciding on an employee benefits programme shouldn’t be a confusing process. Let us do all the work for you.
     screen: /assets/images/screen-04.png
-    image: /assets/images/get-assured-we-bg-7.jpg
+    image: /assets/images/startup.png
     points:
     - content: We promise a fuss-free setup with minimal input from your side.
     - content: Our platform is delivered ready for your employees’ use.

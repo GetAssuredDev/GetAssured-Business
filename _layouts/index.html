@@ -2,9 +2,7 @@
 layout: default
 ---
 
-  <header id="homeHero" class="hero home animated zoomInFade" data-vide-bg="mp4: assets/videos/getassured-biz-bg.mp4, webm: assets/videos/getassured-biz-bg.webm, poster: assets/images/getassured-biz-bg-mobile
-  .jpg"
-  data-vide-options="posterType: jpg, loop: true, muted: true, position: 0% 0%, className: videbg">
+  <header id="homeHero" class="hero home animated zoomInFade" style="background-image: url('{{ site.baseurl}}/assets/images/get-assured-about-bg.jpg')">
   <!-- Header overlay so we can see the nav clearer -->
   <div class="header-overlay"></div>
     <div class="container">
@@ -19,14 +17,23 @@ layout: default
     <div class="white-fade-left"></div>
     <div class="white-fade"></div>
   </header>
-  <div class="white margin-bottom-2">
-    <div class="animated fadeIn animation-delay-28">
-      <div class="container">
-        <h5 class="center-align">Find out how we can help you achieve better harmony in the workplace.</h5>
-        <p class="center-align hide-on-small-only"><a href="#features"><i class="material-icons animation loop float">keyboard_arrow_down</i></a></p>
-      </div>
+    <div class="container-fluid">
+      <h3 class="center-align white margin-bottom-2">Features and Services</h3>
+      <ul id="features" class="collapsible features-accordion scrollspy flex-row row" data-collapsible="accordion">
+        {% for section in page.sections %}
+        <li class="col m3 s12" style="justify-content: center">
+          <div class="collapsible-header" id="{{ section.id | textilize}}Head">
+            <img src="{{section.image | prepend: site.baseurl }}" alt="{{ section.title | textilize }}" class="center">
+            <div class="container-fluid center">
+              <h6 class="margin-top-1">{{section.title | textilize }}</h6>
+              <a href="#!" class="btn primary m3 margin-top-1">Read More</a>
+            </div>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
     </div>
-  </div>
+  <!-- </div> -->
   {% include video-modal.html %}
   <ul id="features" class="collapsible features-accordion scrollspy" data-collapsible="accordion">
     {% for section in page.sections %}
