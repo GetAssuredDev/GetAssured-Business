@@ -31,7 +31,7 @@ Where can I learn more about GetAssured for Business?
 </div>
 <div class="collapsible-body" markdown="1">
 
-You can download our brochure for more information. If you still have any queries, click on  “Get Started”  located at the top right hand corner of our page and fill up the google form with your contact details. Our friendly team will get back to you by the next working day.
+You can download our brochure for more information. If you still have any queries, click on  “Contact Us”  located at the top right hand corner of our page and fill up the google form with your contact details. Our friendly team will get back to you by the next working day.
 
 
 </div>
@@ -45,7 +45,36 @@ Do you offer a free trial?
 </div>
 <div class="collapsible-body" markdown="1">
 
-Subscription to our platform is always free! So no need for free trials, you’re welcome to implement our platform for your company any time.
+Sure! Get in touch with us at [business@get-assured.co](mailto:business@get-assured.co) for a complimentary 2 weeks demo.
+
+</div>
+</li>
+
+<li>
+<div class="collapsible-header">
+
+What insurance benefits do you offer?
+
+</div>
+<div class="collapsible-body" markdown="1">
+
+We offer personal life insurance benefits for your employees on our platform including: whole
+life insurance, term insurance and endowment plans.
+
+</div>
+</li>
+
+<li>
+<div class="collapsible-header">
+
+My company has group insurance in place, why should we use GetAssured?
+
+</div>
+<div class="collapsible-body" markdown="1">
+
+Not to worry! If you have group insurance scheme in place, our platform can be complementary
+to your existing group benefits. Speak to us at [business@get-assured.co](mailto:business@get-assured.co) to find out how we can
+enhance your employees’ benefits today!
 
 </div>
 </li>
@@ -207,7 +236,9 @@ How secure are my employees’ data on GetAssured for Business?
 </div>
 <div class="collapsible-body" markdown="1">
 
-All the information provided will be kept strictly confidential and available only to persons to whom it is necessary to perform the job.
+Rest assured, while we adhere to best practices, we have also enhanced our cybersecurity
+insurance with coverage of up to $1 million to give our clients and partners a better peace of
+mind.
 
 </div>
 </li>

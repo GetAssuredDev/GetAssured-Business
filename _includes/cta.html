@@ -1,8 +1,15 @@
 <!-- <section class="image-section" style="background-image: url({{ "/assets/images/get-assured-contact-bg.jpg" | prepend: site.baseurl }})"></section> -->
 <section class="scrollspy" id="contact">
   <div class="container center-align">
-    <h3>Let’s talk, we’d love to hear more from you.</h3>
-    <p>Drop us an email at business@get-assured.com</p>
-    <a href="mailto:business@get-assured.co" class="btn primary"><i class="material-icons left">email</i>Email Us</a>
+    <h3>Stay in Touch</h3>
+    <img src="{{ "/assets/images/newsletter.png" | prepend: site.baseurl }}" class="center">
+    <p>We’ll love to share exciting news with you! Get exclusive access as we unlock new products and
+giveaway freebies.</p>
+  <!-- <a href="mailto:business@get-assured.co" class="btn primary"><i class="material-icons left">email</i>Email Us</a> -->
+    <form method="POST" action="https://formspree.io/ian@get-assured.co">
+      <input type="email" name="email" placeholder="Email">
+      <input name="name" placeholder="Name">
+      <button type="submit" class="btn primary">Contact Me</button>
+    </form>
   </div>
 </section>
