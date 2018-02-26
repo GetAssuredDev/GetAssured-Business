@@ -13,9 +13,9 @@ imageBreakClass: mobile-right
 
 <div class="container center">
 {:.title}
-### Here’s how you use GetAssured
+###  Here’s how you use GetAssured
 
-<iframe width="1000" height="563" src="https://www.youtube.com/embed/yRcW8xNRjKc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style='margin-bottom:35px; margin-top:25px;' class="center"></iframe>
+<iframe width="700" height="394" class="center" src="https://www.youtube.com/embed/yRcW8xNRjKc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="margin-bottom:35px; margin-top:25px;"></iframe>
 </div>
 
 {:.title}

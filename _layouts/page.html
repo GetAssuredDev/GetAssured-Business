@@ -9,7 +9,7 @@ layout: default
   </div>
 </section>
 {% for section in page.sections %}
-  <section class="sub-content {{ section.class }}">
+  <!-- <section class="sub-content {{ section.class }}">
     <div class="container">
       <h3 class="white-text">{{ section.title  | textilize }}</h3>
       <div class="row flex-row">
@@ -18,6 +18,20 @@ layout: default
             <div>
               <h5>{{ point.title  | textilize }}</h5>
               <p>{{ point.content  | textilize }}</p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section> -->
+  <section class="sub-content {{ section.class }}">
+    <div class="container">
+      <h3 class="white-text">{{ section.title  | textilize }}</h3>
+      <div class="row flex-row">
+        {% for point in section.points %}
+          <div class="col s12 m12">
+            <div>
+              <h5>{{ point.content  | textilize }}</h5>
             </div>
           </div>
         {% endfor %}

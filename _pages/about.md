@@ -19,6 +19,12 @@ sections:
       content: Technology is the backbone of our solution, but our team of professionals is laser-focused on delivering value beyond our customers’ expectations.
     - title: Innovation
       content: We are reimagining employee benefits with the aim of delivering greater value at lower costs.
+  - id: whatItMeans
+    class: primary white-text
+    title: What It Means For You
+    points:
+    - title: ​What It Means For You
+      content: Whether you a SME, MNC or operate in the gig economy, we have the solution to help you take care of the people who make your business run like clockwork. By helping you take care of your employees, we enable you to do what you do best&nbsp;- &nbsp;grow your business and focus on your customers.
 ---
 
 {:.title}
