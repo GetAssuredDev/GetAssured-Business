@@ -15,6 +15,7 @@
   $(document).ready(function(){
     //get the height of the nav
     var $navHeight = $('nav').height();
+    console.log('bye')
 
     //init sidenav
     $('.button-collapse').sideNav({
@@ -51,6 +52,31 @@
     }
 
     $('.modal').modal();
+
+    $('#personalisedFunction').click(function(){
+      $('#personalisedBody').slideToggle('slow')
+      $('#spendLessBody').hide()
+      $('#zeroCostBody').hide()
+      $('#hassleFreeBody').hide()
+    })
+    $('#spendLessFunction').click(function(){
+      $('#spendLessBody').slideToggle('slow')
+      $('#personalisedBody').hide()
+      $('#zeroCostBody').hide()
+      $('#hassleFreeBody').hide()
+    })
+    $('#zeroCostFunction').click(function(){
+      $('#zeroCostBody').slideToggle('slow')
+      $('#hassleFreeBody').hide()
+      $('#personalisedBody').hide()
+      $('#spendLessBody').hide()
+    })
+    $('#hassleFreeFunction').click(function(){
+      $('#hassleFreeBody').slideToggle('slow')
+      $('#personalisedBody').hide()
+      $('#spendLessBody').hide()
+      $('#zeroCostBody').hide()
+    })
   });
 </script>
 {% if page.id == 'index' %}

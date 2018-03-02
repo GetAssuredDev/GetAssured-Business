@@ -17,8 +17,9 @@ layout: default
     <div class="white-fade-left"></div>
     <div class="white-fade"></div>
   </header>
-    <div class="container-fluid">
-      <h3 class="center-align white margin-bottom-2">Reimagine Employee Benefits</h3>
+  <section class="main-content primary white-text">
+    <div class="container">
+      <h3 class="center-align margin-bottom-2">​Click here if you are a...</h3>
       <ul id="features" class="scrollspy flex-row row employee-benefits">
         <li class="col m4 s12">
           <div class="container-fluid center">
@@ -40,78 +41,44 @@ layout: default
         </li>
       </ul>
     </div>
+  </section>
     <div class="container-fluid">
-      <h3 class="center-align white margin-bottom-2">Features and Services</h3>
-      <ul id="features" class="collapsible features-accordion scrollspy flex-row row" data-collapsible="accordion">
+      <h3 class="center-align white margin-bottom-2 margin-top-3">Features and Services</h3>
+      <!-- test for new collapse page -->
+      <ul id="features" class="features-accordion scrollspy flex-row row">
         {% for section in page.sections %}
         <li class="col m3 s12" style="justify-content: center">
-          <div class="collapsible-header" id="{{ section.id | textilize}}Head">
+          <div id="{{ section.id | textilize}}Head">
             <img src="{{section.image | prepend: site.baseurl }}" alt="{{ section.title | textilize }}" class="center">
             <div class="container-fluid center">
               <h6 class="margin-top-1">{{section.title | textilize }}</h6>
-              <a href="#!" class="btn primary m3 margin-top-1">Read More</a>
-            </div>
-          </div>
-          <div class="collapsible-body" id="{{ section.id  | textilize }}Body" >
-            <div class="container">
-              <div class="row">
-                <div class="col s12 m5 push-m7 collapse-content">
-                  {% for point in section.points %}
-                  <div class="collapse-list">
-                    <p>{{ point.content  | textilize }}</p>
-                  </div>
-                  {% endfor %}
-                </div>
-                <div class="col s12 m6 pull-m6 offset-m1 collapse-content">
-                  <div class="screenshot">
-                    <img src="{{ section.screen | prepend: site.baseurl }}" class="responsive-img materialboxed">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-        {% endfor %}
-      </ul>
-      <!-- test for new collapse page -->
-      <!-- <ul id="features" class="collapsible features-accordion scrollspy flex-row row" data-collapsible="accordion">
-        {% for section in page.sections %}
-        <li class="col m3 s12" style="justify-content: center" data-toggle="collapse" data-target="#{{ section.id  | textilize }}Body">
-          <div class="collapsible-header" id="{{ section.id | textilize}}Head">
-            <img src="{{section.image | prepend: site.baseurl }}" alt="{{ section.title | textilize }}" class="center">
-            <div class="container-fluid center">
-              <h6 class="margin-top-1">{{section.title | textilize }}</h6>
-              <a href="#!" class="btn primary m3 margin-top-1">Read More</a>
+              <a href="#!" class="btn primary m3 margin-top-1" id="{{ section.id | textilize }}Function">Read More</a>
             </div>
           </div>
         </li>
         {% endfor %}
       </ul>
     </div>
-    <div class="container-fluid">
-      <div class="flex-row row">
-        {% for section in page.sections %}
-        <div class="collapsible-body collapse" id="{{ section.id  | textilize }}Body" >
-          <div class="container">
-            <div class="row">
-              <div class="col s12 m5 push-m7 collapse-content">
-                {% for point in section.points %}
-                <div class="collapse-list">
-                  <p>{{ point.content  | textilize }}</p>
-                </div>
-                {% endfor %}
-              </div>
-              <div class="col s12 m6 pull-m6 offset-m1 collapse-content">
-                <div class="screenshot">
-                  <img src="{{ section.screen | prepend: site.baseurl }}" class="responsive-img materialboxed">
-                </div>
-              </div>
+    {% for section in page.sections %}
+    <div class="container-fluid margin-top-3 hidden" id="{{ section.id  | textilize }}Body">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m5 push-m7 collapse-content">
+            {% for point in section.points %}
+            <div class="collapse-list">
+              <p>{{ point.content  | textilize }}</p>
+            </div>
+            {% endfor %}
+          </div>
+          <div class="col s12 m6 pull-m6 offset-m1 collapse-content">
+            <div class="screenshot">
+              <img src="{{ section.screen | prepend: site.baseurl }}" class="responsive-img materialboxed">
             </div>
           </div>
         </div>
-        {% endfor%}
-      </div> -->
+      </div>
     </div>
+    {% endfor%}
   {% include video-modal.html %}
   {% include cta.html %}
   <section class="image-section" style="background-image: url({{ "/assets/images/get-assured-contact-bg.jpg" | prepend: site.baseurl }})"></section>
