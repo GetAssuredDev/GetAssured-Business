@@ -5,46 +5,54 @@ layout: default
 
 {{ content }}
 
-<div class="container-fluid">
-  <h3 class="center margin-top-2 margin-bottom-2">Here’s how it’s going to work:</h3>
+<div class="container">
+  <h3 class="center margin-top-2 margin-bottom-3">Here’s how it’s going to work:</h3>
   <ul class="scrollspy flex-row row">
     <li class="col m2 s12" style="justify-content: center; margin-left: 0px;">
-      <img src="{{ "/assets/images/analyse@2x.png" | prepend: site.baseurl }}" style="width:50%; height:50%;" class="center">
       <div class="container-fluid center">
+      <img src="{{ "/assets/images/analyse@2x.png" | prepend: site.baseurl }}" style="width:50%; height:25%;" class="center">
         <h6>Algorithmic Analysis</h6>
         <p>We help your employees find out what benefits they really require through our algorithmic analysis.</p>
       </div>
     </li>
     <li class="col m2 s12" style="justify-content: center">
-      <img src="{{ "/assets/images/compare@2x.png" | prepend: site.baseurl }}" style="width:50%; height:50%;">
       <div class="container-fluid center">
+      <img src="{{ "/assets/images/compare@2x.png" | prepend: site.baseurl }}" style="width:50%; height:25%;">
         <h6>Comparison and Quotation</h6>
         <p>Our platform allows your employees to compare and decide on the products that best suits their uncovered needs.</p>
       </div>
     </li>
     <li class="col m2 s12" style="justify-content: center">
-      <img src="{{ "/assets/images/advise@2x.png" | prepend: site.baseurl }}" style="width:50%; height:50%;">
       <div class="container-fluid center">
+      <img src="{{ "/assets/images/advise@2x.png" | prepend: site.baseurl }}" style="width:50%; height:25%;">
         <h6>On-demand Advice</h6>
         <p>Have a query? Need assistance? Get on-demand advice from the trusted pool of advisors that we work with.</p>
       </div>
     </li>
     <li class="col m2 s12" style="justify-content: center">
-      <img src="{{ "/assets/images/document@2x.png" | prepend: site.baseurl }}" style="width:50%; height:50%;">
       <div class="container-fluid center">
+      <img src="{{ "/assets/images/document@2x.png" | prepend: site.baseurl }}" style="width:50%; height:25%;">
         <h6>Benefits Application</h6>
         <p>Once your employees have decided on their benefits they want, an advisor will meet up with your employee at a time of his convenience to assist with the necessary documents and forms.</p>
       </div>
     </li>
     <li class="col m2 s12" style="justify-content: center">
-      <img src="{{ "/assets/images/mail@2x.png" | prepend: site.baseurl }}" style="width:50%; height:50%;">
       <div class="container-fluid center">
+        <img src="{{ "/assets/images/mail@2x.png" | prepend: site.baseurl }}" style="width:50%; height:25%;">
         <h6>Document Delivery</h6>
         <p>Once the application is processed, the insurer will send your employee their policy document via mail.</p>
       </div>
     </li>
   </ul>
 </div>
+<section class="main-content secondary lighten-1 white-text">
+  <div class="container">
+
+  <p>There is absolutely <strong>NO hassle</strong> on your part, thereby we help you save a significant amount of time and costs without compromising on your employees’ benefits, welfare and happiness.</p>
+  <p>To find out more about what we have to offer, fill in the contact form and we will be happy to come by your office for a demo. Once we get your go-ahead, we will work with your IT team to set things up. Quick and simple! No need to fret on guiding your employees through the platform, we will provide an e-guide as part of the employee onboarding process to orientate them.</p>
+
+  </div>
+</section>
 
 {% include cta.html %}
 <section class="image-section {{ page.imageBreakClass }}" style="background-image: url({{ page.imageBreak | prepend: site.baseurl }})"></section>

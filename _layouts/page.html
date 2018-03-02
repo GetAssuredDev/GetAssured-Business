@@ -9,76 +9,59 @@ layout: default
   </div>
 </section>
 {% for section in page.sections %}
-  <!-- <section class="sub-content {{ section.class }}">
-    <div class="container">
-      <h3 class="white-text">{{ section.title  | textilize }}</h3>
-      <div class="row flex-row">
-        {% for point in section.points %}
-          <div class="col s12 m6">
-            <div>
-              <h5>{{ point.title  | textilize }}</h5>
-              <p>{{ point.content  | textilize }}</p>
-            </div>
-          </div>
-        {% endfor %}
-      </div>
-    </div>
-  </section> -->
   <section class="sub-content {{ section.class }}">
     <div class="container">
-      <h3 class="white-text">{{ section.title  | textilize }}</h3>
-      <div class="row flex-row">
+      {% if section.id == "ourPromise" %}
+        <h3 class="white-text center">{{ section.title  | textilize }}</h3>
+      {% else %}
+        <h3 class="white-text">{{ section.title  | textilize }}</h3>
+      {% endif %}
         {% for point in section.points %}
-          <div class="col s12 m12">
-            <div>
-              <h5>{{ point.content  | textilize }}</h5>
-              <ol class="scrollspy flex-row row">
-                {% for ppoints in point.promises %}
-                <li class="col m3 s12" style="justify-content: center; padding-left: 0px; margin-left: 0px;">
-                  <h6>{{ ppoints.pointers  | textilize }}</h6>
-                </li>
-                {% endfor %}
-              </ol>
-            </div>
-          </div>
-        </div>
+          <h5>{{ point.content  | textilize }}</h5>
+          <ol class="scrollspy flex-row row col s12 m12">
+            {% for ppoints in point.promises %}
+            <li class="col m4 s12" style="justify-content: center; padding-left: 0px; margin-left: 0px;">
+              <h6>{{ ppoints.pointers  | textilize }}</h6>
+            </li>
+            {% endfor %}
+          </ol>
       </div>
     </section>
     {% if section.id != "ourPromise" %}
-    <section class="container-fluid">
-      <h3 class="center">Why Us</h3>
+    <section class="container">
+      <h3 class="center margin-bottom-2">Why Us</h3>
       <ul class="scrollspy flex-row row">
         <li class="col m2 s12" style="justify-content: center; margin-left: 0px;">
-          <!-- <img src="{{ "/assets/images/Experience.png" | prepend: site.baseurl }}" alt="{{ section.title | textilize }}" class="center"> -->
           <div class="container-fluid center">
+          <img src="{{ "/assets/images/Experience.png" | prepend: site.baseurl }}" class="center">
             <h6>Experience</h6>
             <p>With over two decades of experience, we understand the business from inside out, and are the best people to talk to about employee benefits.</p>
           </div>
         </li>
         <li class="col m2 s12" style="justify-content: center">
-          <!-- <img src="{{ "/assets/images/service.png" | prepend: site.baseurl }}" alt="{{ section.title | textilize }}" class="center"> -->
           <div class="container-fluid center">
+          <img src="{{ "/assets/images/service.png" | prepend: site.baseurl }}" class="center">
             <h6>Service</h6>
             <p>Technology is the backbone of our solution, but our team of professionals is laser-focused on delivering value beyond our customers’ expectations.</p>
           </div>
         </li>
         <li class="col m2 s12" style="justify-content: center">
-          <!-- <img src="{{ "/assets/images/partnership.png" | prepend: site.baseurl }}" alt="{{ section.title | textilize }}" class="center"> -->
           <div class="container-fluid center">
+            <img src="{{ "/assets/images/partnership.png" | prepend: site.baseurl }}" class="center">
             <h6>Partnership</h6>
             <p>We’ve formed amazing partnerships with companies that are collectively committed to transforming the employee benefits space.</p>
           </div>
         </li>
         <li class="col m2 s12" style="justify-content: center">
-          <!-- <img src="{{ "/assets/images/innovation.png" | prepend: site.baseurl }}" alt="{{ section.title | textilize }}" class="center"> -->
           <div class="container-fluid center">
+          <img src="{{ "/assets/images/innovation.png" | prepend: site.baseurl }}" class="center">
             <h6>Innovation</h6>
             <p>We are reimagining employee benefits with the aim of delivering greater value at lower costs.</p>
           </div>
         </li>
         <li class="col m2 s12" style="justify-content: center">
-          <!-- <img src="{{ "/assets/images/cybersecurity.png" | prepend: site.baseurl }}" alt="{{ section.title | textilize }}" class="center"> -->
           <div class="container-fluid center">
+          <img src="{{ "/assets/images/cybersecurity.png" | prepend: site.baseurl }}" class="center">
             <h6>Cybersecurity</h6>
             <p>More than just ensuring we adhere to best practices, we have also enhanced our commitment to our clients and partners with cybersecurity insurance coverage of up to $1 million.</p>
           </div>
