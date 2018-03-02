@@ -77,6 +77,33 @@
       $('#spendLessBody').hide()
       $('#zeroCostBody').hide()
     })
+
+    $('#startup').click(function(){
+      $('#startupBody').slideToggle('slow')
+      $('#mncBody').hide()
+      $('#gigBody').hide()
+    //   $('html, body').animate({
+    //     scrollTop: $("#startupBody").offset().top
+    // }, 1000);
+    })
+
+    $('#mnc').click(function(){
+      $('#gigBody').hide()
+      $('#mncBody').slideToggle('slow')
+      $('#startupBody').hide()
+    //   $('html, body').animate({
+    //     scrollTop: $("#mncBody").offset().top
+    // }, 1000);
+    })
+
+    $('#gig').click(function(){
+      $('#gigBody').slideToggle('slow')
+      $('#mncBody').hide()
+      $('#startupBody').hide()
+    //   $('html, body').animate({
+    //     scrollTop: $("#gigBody").offset().top
+    // }, 1000);
+    })
   });
 </script>
 {% if page.id == 'index' %}

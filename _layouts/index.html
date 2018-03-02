@@ -18,33 +18,68 @@ layout: default
     <div class="white-fade"></div>
   </header>
   <section class="main-content primary white-text">
-    <div class="container">
-      <h3 class="center-align margin-bottom-2">​Click here if you are a...</h3>
+    <div class="container-fluid">
+      <h3 class="center-align margin-bottom-3" style="font-style: italic;">​Click here if you are a...</h3>
       <ul id="features" class="scrollspy flex-row row employee-benefits">
         <li class="col m4 s12">
-          <div class="container-fluid center">
-            <img src="{{ "/assets/images/startupnew.png" | prepend: site.baseurl }}" alt="{{ section.title | textilize }}">
-            <h3 class="text-center">Startups, SMEs</h3>
+          <div class="container-fluid center images" id="startup">
+            <a href="#!">
+              <img src="{{ "/assets/images/startupnew.png" | prepend: site.baseurl }}">
+              <h5 class="text-center white-text">Startups, SMEs</h5>
+            </a>
           </div>
         </li>
         <li class="col m4 s12">
-          <div class="container-fluid center">
-            <img src="{{ "/assets/images/MNC.png" | prepend: site.baseurl }}" alt="{{ section.title | textilize }}">
-            <h3 class="text-center">MNC</h3>
+          <div class="container-fluid center images" id="mnc">
+            <a href="#!">
+              <img src="{{ "/assets/images/MNC.png" | prepend: site.baseurl }}">
+              <h5 class="text-center white-text">MNC</h5>
+            </a>
           </div>
         </li>
         <i class="col m4 s12">
-          <div class="container-fluid center">
-            <img src="{{ "/assets/images/gigecon.png" | prepend: site.baseurl }}" alt="{{ section.title | textilize }}" style="width: 370px; length: 423px;">
-            <h3 class="text-center">Gig Economy</br>Companies</h3>
+          <div class="container-fluid center images" id="gig">
+            <a href="#!">
+              <img src="{{ "/assets/images/gigecon.png" | prepend: site.baseurl }}" style="width: 370px; length: 423px;">
+              <h5 class="text-center white-text">Gig Economy</br>Companies</h5>
+            </a>
           </div>
         </li>
       </ul>
     </div>
   </section>
+  <!-- hidden div for first section -->
+  {% for issues in page.areyou %}
+  <div class="container-fluid margin-top-3 hidden" id="{{ issues.id  | textilize }}Body">
+  <!-- <div class="container-fluid margin-top-3" id="{{ issues.id  | textilize }}Body"> -->
+    <div class="container">
+      <div class="row">
+        <h6 class="col m3 s12" style="color:red;">PROBLEM</h6>
+        <ul>
+          {% for point in issues.problems %}
+          <li class="col m3 s12">
+            <p>{{ point.content  | textilize }}</p>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <!-- solution for the problem shown above -->
+      <div class="row">
+        <h6 class="col m3 s12" style="color:blue;">SOLUTION</h6>
+        <ul>
+          {% for point in issues.problems %}
+          <li class="col m3 s12">
+            <p>{{ point.solution | textilize }}</p>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <hr>
+    </div>
+  </div>
+  {% endfor%}
     <div class="container-fluid">
       <h3 class="center-align white margin-bottom-2 margin-top-3">Features and Services</h3>
-      <!-- test for new collapse page -->
       <ul id="features" class="features-accordion scrollspy flex-row row">
         {% for section in page.sections %}
         <li class="col m3 s12" style="justify-content: center">
@@ -63,14 +98,14 @@ layout: default
     <div class="container-fluid margin-top-3 hidden" id="{{ section.id  | textilize }}Body">
       <div class="container">
         <div class="row">
-          <div class="col s12 m5 push-m7 collapse-content">
+          <div class="col s12 m5 push-m7">
             {% for point in section.points %}
             <div class="collapse-list">
               <p>{{ point.content  | textilize }}</p>
             </div>
             {% endfor %}
           </div>
-          <div class="col s12 m6 pull-m6 offset-m1 collapse-content">
+          <div class="col s12 m6 pull-m6 offset-m1">
             <div class="screenshot">
               <img src="{{ section.screen | prepend: site.baseurl }}" class="responsive-img materialboxed">
             </div>

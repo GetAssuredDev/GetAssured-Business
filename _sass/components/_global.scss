@@ -27,6 +27,17 @@ main {
   // flex: 1 0 auto;
 }
 
+// .images{
+//   position: relative;
+//   width: 100%;
+//   .clickButton{
+//     position: absolute;
+//     top: 330px;
+//     left: 190px;
+//     width: 40%;
+//   }
+// }
+
 ul {
   &:not(.browser-default) {
     padding-left: 0;
