@@ -19,7 +19,7 @@ layout: default
   </header>
   <section class="main-content primary white-text">
     <div class="container-fluid">
-      <h3 class="center-align margin-bottom-3" style="font-style: italic;">Who we work with?</h3>
+      <h3 class="center-align margin-bottom-3" style="font-style: italic;">Who we work with</h3>
       <!-- <h5 class="center-align margin-bottom-3" style="font-style: italic;">​Click here if you are a...</h5> -->
       <ul id="features" class="scrollspy flex-row row employee-benefits">
         <li class="col m4 s12">
@@ -55,7 +55,7 @@ layout: default
   <!-- <div class="container-fluid margin-top-3" id="{{ issues.id  | textilize }}Body"> -->
     <div class="container">
       <div class="row">
-        <h6 class="col m3 s12" style="color:red;">PROBLEM</h6>
+        <h6 class="col m3 s12" style="color:red;">Your Biggest Challenge</h6>
         <ul>
           {% for point in issues.problems %}
           <li class="col m3 s12">
@@ -66,7 +66,7 @@ layout: default
       </div>
       <!-- solution for the problem shown above -->
       <div class="row">
-        <h6 class="col m3 s12" style="color:blue;">SOLUTION</h6>
+        <h6 class="col m3 s12" style="color:blue;">How We Can Help</h6>
         <ul>
           {% for point in issues.problems %}
           <li class="col m3 s12">
@@ -118,7 +118,7 @@ layout: default
     {% endfor%}
   {% include video-modal.html %}
   <div class="container">
-    <hr>
+    <hr class="margin-top-3">
   </div>
   {% include cta.html %}
   <section class="image-section" style="background-image: url({{ "/assets/images/get-assured-contact-bg.jpg" | prepend: site.baseurl }})"></section>
