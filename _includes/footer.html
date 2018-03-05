@@ -2,7 +2,7 @@
   <div class="footer-logo">
     <img src="{{ "/assets/images/get-assured-business-logo-white@3x.png" | prepend: site.baseurl }}" class="responsive-img">
   </div>
-	<span class="copyright-text">Copyright 2017 GetAssured. An initiative of Trunk Tech Pte Ltd. All rights reserved.</span>
+  <span class="copyright-text">Visit us at 10 Anson Road, #06-24, International Plaza, Singapore 079903</br>Copyright 2018 GetAssured. An initiative of Trunk Tech Pte Ltd. All rights reserved.</span>
 </footer>
 
 <!-- Compiled and minified JavaScript -->
@@ -15,6 +15,7 @@
   $(document).ready(function(){
     //get the height of the nav
     var $navHeight = $('nav').height();
+    console.log('bye')
 
     //init sidenav
     $('.button-collapse').sideNav({
@@ -51,6 +52,58 @@
     }
 
     $('.modal').modal();
+
+    $('#personalisedFunction').click(function(){
+      $('#personalisedBody').slideToggle('slow')
+      $('#spendLessBody').hide()
+      $('#zeroCostBody').hide()
+      $('#hassleFreeBody').hide()
+    })
+    $('#spendLessFunction').click(function(){
+      $('#spendLessBody').slideToggle('slow')
+      $('#personalisedBody').hide()
+      $('#zeroCostBody').hide()
+      $('#hassleFreeBody').hide()
+    })
+    $('#zeroCostFunction').click(function(){
+      $('#zeroCostBody').slideToggle('slow')
+      $('#hassleFreeBody').hide()
+      $('#personalisedBody').hide()
+      $('#spendLessBody').hide()
+    })
+    $('#hassleFreeFunction').click(function(){
+      $('#hassleFreeBody').slideToggle('slow')
+      $('#personalisedBody').hide()
+      $('#spendLessBody').hide()
+      $('#zeroCostBody').hide()
+    })
+
+    $('#startup').click(function(){
+      $('#startupBody').slideToggle('slow')
+      $('#mncBody').hide()
+      $('#gigBody').hide()
+    //   $('html, body').animate({
+    //     scrollTop: $("#startupBody").offset().top
+    // }, 1000);
+    })
+
+    $('#mnc').click(function(){
+      $('#gigBody').hide()
+      $('#mncBody').slideToggle('slow')
+      $('#startupBody').hide()
+    //   $('html, body').animate({
+    //     scrollTop: $("#mncBody").offset().top
+    // }, 1000);
+    })
+
+    $('#gig').click(function(){
+      $('#gigBody').slideToggle('slow')
+      $('#mncBody').hide()
+      $('#startupBody').hide()
+    //   $('html, body').animate({
+    //     scrollTop: $("#gigBody").offset().top
+    // }, 1000);
+    })
   });
 </script>
 {% if page.id == 'index' %}

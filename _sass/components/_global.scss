@@ -7,6 +7,16 @@ html {
  box-sizing: inherit;
 }
 
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hidden{
+  display: none;
+}
+
 body {
   // display: flex;
   // min-height: 100vh;
@@ -16,6 +26,17 @@ body {
 main {
   // flex: 1 0 auto;
 }
+
+// .images{
+//   position: relative;
+//   width: 100%;
+//   .clickButton{
+//     position: absolute;
+//     top: 330px;
+//     left: 190px;
+//     width: 40%;
+//   }
+// }
 
 ul {
   &:not(.browser-default) {

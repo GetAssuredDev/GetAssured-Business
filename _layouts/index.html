@@ -2,9 +2,7 @@
 layout: default
 ---
 
-  <header id="homeHero" class="hero home animated zoomInFade" data-vide-bg="mp4: assets/videos/getassured-biz-bg.mp4, webm: assets/videos/getassured-biz-bg.webm, poster: assets/images/getassured-biz-bg-mobile
-  .jpg"
-  data-vide-options="posterType: jpg, loop: true, muted: true, position: 0% 0%, className: videbg">
+  <header id="homeHero" class="hero home animated zoomInFade" style="background-image: url('{{ site.baseurl}}/assets/images/get-assured-about-bg.jpg')">
   <!-- Header overlay so we can see the nav clearer -->
   <div class="header-overlay"></div>
     <div class="container">
@@ -19,89 +17,109 @@ layout: default
     <div class="white-fade-left"></div>
     <div class="white-fade"></div>
   </header>
-  <div class="white margin-bottom-2">
-    <div class="animated fadeIn animation-delay-28">
-      <div class="container">
-        <h5 class="center-align">Find out how we can help you achieve better harmony in the workplace.</h5>
-        <p class="center-align hide-on-small-only"><a href="#features"><i class="material-icons animation loop float">keyboard_arrow_down</i></a></p>
+  <section class="main-content primary white-text">
+    <div class="container-fluid">
+      <h3 class="center-align margin-bottom-3" style="font-style: italic;">Who we work with?</h3>
+      <!-- <h5 class="center-align margin-bottom-3" style="font-style: italic;">​Click here if you are a...</h5> -->
+      <ul id="features" class="scrollspy flex-row row employee-benefits">
+        <li class="col m4 s12">
+          <div class="container-fluid center images" id="startup">
+            <a href="#!">
+              <h5 class="text-center white-text">Startups, SMEs</h5>
+              <img src="{{ "/assets/images/startupnew.png" | prepend: site.baseurl }}">
+            </a>
+          </div>
+        </li>
+        <li class="col m4 s12">
+          <div class="container-fluid center images" id="mnc">
+            <a href="#!">
+              <h5 class="text-center white-text">MNC</h5>
+              <img src="{{ "/assets/images/MNC.png" | prepend: site.baseurl }}">
+            </a>
+          </div>
+        </li>
+        <i class="col m4 s12">
+          <div class="container-fluid center images" id="gig">
+            <a href="#!">
+              <h5 class="text-center white-text">Gig Economy</br>Companies</h5>
+              <img src="{{ "/assets/images/gigecon.png" | prepend: site.baseurl }}" style="width: 370px; length: 423px;">
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- hidden div for first section -->
+  {% for issues in page.areyou %}
+  <div class="container-fluid margin-top-3 hidden" id="{{ issues.id  | textilize }}Body">
+  <!-- <div class="container-fluid margin-top-3" id="{{ issues.id  | textilize }}Body"> -->
+    <div class="container">
+      <div class="row">
+        <h6 class="col m3 s12" style="color:red;">PROBLEM</h6>
+        <ul>
+          {% for point in issues.problems %}
+          <li class="col m3 s12">
+            <p>{{ point.content  | textilize }}</p>
+          </li>
+          {% endfor %}
+        </ul>
       </div>
+      <!-- solution for the problem shown above -->
+      <div class="row">
+        <h6 class="col m3 s12" style="color:blue;">SOLUTION</h6>
+        <ul>
+          {% for point in issues.problems %}
+          <li class="col m3 s12">
+            <p>{{ point.solution | textilize }}</p>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <!-- <p>Request for a demo today to test it yourself!</p> -->
+      <hr>
     </div>
   </div>
-  {% include video-modal.html %}
-  <ul id="features" class="collapsible features-accordion scrollspy" data-collapsible="accordion">
+  {% endfor%}
+    <div class="container-fluid">
+      <h3 class="center-align white margin-bottom-2 margin-top-3">Features and Services</h3>
+      <ul id="features" class="features-accordion scrollspy flex-row row">
+        {% for section in page.sections %}
+        <li class="col m3 s12" style="justify-content: center">
+          <div id="{{ section.id | textilize}}Head">
+            <img src="{{section.image | prepend: site.baseurl }}" alt="{{ section.title | textilize }}" class="center">
+            <div class="container-fluid center">
+              <h6 class="margin-top-1">{{section.title | textilize }}</h6>
+              <a href="#!" class="btn primary m3 margin-top-1" id="{{ section.id | textilize }}Function">Read More</a>
+            </div>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
     {% for section in page.sections %}
-      {% assign mod = forloop.index | modulo: 2 %}
-      {% if mod != 0 %}
-        <!-- layout for odd numbered  -->
-        <li>
-          <div class="collapsible-header" id="{{ section.id  | textilize }}Head">
-            <div class="row flex-row">
-              <div class="col s12 m6 push-m6 collapse-header-content" style="background-image: url({{ section.image | prepend: site.baseurl }})"></div>
-              <div class="col s12 m5 pull-m6 collapse-header-content">
-                <div class="container">
-                  <h3>{{ section.title  | textilize }}</h3>
-                  <p>{{ section.content  | textilize }}</p>
-                  <a href="#!" class="btn primary-ghost">Read More</a>
-                </div>
-              </div>
+    <div class="container-fluid margin-top-3 hidden" id="{{ section.id  | textilize }}Body">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m5 push-m7">
+            {% for point in section.points %}
+            <div class="collapse-list">
+              <p>{{ point.content  | textilize }}</p>
+            </div>
+            {% endfor %}
+          </div>
+          <div class="col s12 m6 pull-m6 offset-m1">
+            <div class="screenshot">
+              <img src="{{ section.screen | prepend: site.baseurl }}" class="responsive-img materialboxed">
             </div>
           </div>
-          <div class="collapsible-body" id="{{ section.id  | textilize }}Body" >
-            <div class="container">
-              <div class="row">
-                <div class="col s12 m5 push-m7 collapse-content">
-                  {% for point in section.points %}
-                    <div class="collapse-list">
-                      <p>{{ point.content  | textilize }}</p>
-                    </div>
-                  {% endfor %}
-                </div>
-                <div class="col s12 m6 pull-m6 offset-m1 collapse-content">
-                  <div class="screenshot">
-                    <img src="{{ section.screen | prepend: site.baseurl }}" class="responsive-img materialboxed">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-      {% else %}
-        <!-- layout for even numbered  -->
-        <li>
-          <div class="collapsible-header" id="{{ section.id  | textilize }}Head">
-            <div class="row flex-row">
-              <div class="col s12 m6 collapse-header-content" style="background-image: url({{ section.image | prepend: site.baseurl }})"></div>
-              <div class="col s12 m5 pull-m1 collapse-header-content">
-                <div class="container">
-                  <h3>{{ section.title  | textilize }}</h3>
-                  <p>{{ section.content  | textilize }}</p>
-                  <a href="#!" class="btn primary-ghost">Read More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="collapsible-body" id="{{ section.id  | textilize }}Body" >
-            <div class="container">
-              <div class="row">
-                <div class="col s12 m5 collapse-content">
-                  {% for point in section.points %}
-                    <div class="collapse-list">
-                      <p>{{ point.content  | textilize }}</p>
-                    </div>
-                  {% endfor %}
-                </div>
-                <div class="col s12 m6 offset-m1 collapse-content">
-                  <div class="screenshot">
-                    <img src="{{ section.screen | prepend: site.baseurl }}" class="responsive-img materialboxed">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-      {% endif %}
-    {% endfor %}
-  </ul>
+        </div>
+      </div>
+    </div>
+    {% endfor%}
+  {% include video-modal.html %}
+  <div class="container">
+    <hr>
+  </div>
   {% include cta.html %}
   <section class="image-section" style="background-image: url({{ "/assets/images/get-assured-contact-bg.jpg" | prepend: site.baseurl }})"></section>
   <section class="primary white-text">
