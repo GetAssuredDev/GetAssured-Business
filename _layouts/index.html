@@ -19,29 +19,30 @@ layout: default
   </header>
   <section class="main-content primary white-text">
     <div class="container-fluid">
-      <h3 class="center-align margin-bottom-3" style="font-style: italic;">​Click here if you are a...</h3>
+      <h3 class="center-align margin-bottom-3" style="font-style: italic;">Who we work with?</h3>
+      <!-- <h5 class="center-align margin-bottom-3" style="font-style: italic;">​Click here if you are a...</h5> -->
       <ul id="features" class="scrollspy flex-row row employee-benefits">
         <li class="col m4 s12">
           <div class="container-fluid center images" id="startup">
             <a href="#!">
-              <img src="{{ "/assets/images/startupnew.png" | prepend: site.baseurl }}">
               <h5 class="text-center white-text">Startups, SMEs</h5>
+              <img src="{{ "/assets/images/startupnew.png" | prepend: site.baseurl }}">
             </a>
           </div>
         </li>
         <li class="col m4 s12">
           <div class="container-fluid center images" id="mnc">
             <a href="#!">
-              <img src="{{ "/assets/images/MNC.png" | prepend: site.baseurl }}">
               <h5 class="text-center white-text">MNC</h5>
+              <img src="{{ "/assets/images/MNC.png" | prepend: site.baseurl }}">
             </a>
           </div>
         </li>
         <i class="col m4 s12">
           <div class="container-fluid center images" id="gig">
             <a href="#!">
-              <img src="{{ "/assets/images/gigecon.png" | prepend: site.baseurl }}" style="width: 370px; length: 423px;">
               <h5 class="text-center white-text">Gig Economy</br>Companies</h5>
+              <img src="{{ "/assets/images/gigecon.png" | prepend: site.baseurl }}" style="width: 370px; length: 423px;">
             </a>
           </div>
         </li>
@@ -74,6 +75,7 @@ layout: default
           {% endfor %}
         </ul>
       </div>
+      <!-- <p>Request for a demo today to test it yourself!</p> -->
       <hr>
     </div>
   </div>
@@ -115,6 +117,9 @@ layout: default
     </div>
     {% endfor%}
   {% include video-modal.html %}
+  <div class="container">
+    <hr>
+  </div>
   {% include cta.html %}
   <section class="image-section" style="background-image: url({{ "/assets/images/get-assured-contact-bg.jpg" | prepend: site.baseurl }})"></section>
   <section class="primary white-text">

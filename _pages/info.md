@@ -11,9 +11,9 @@ imageBreakClass: mobile-right
 <section class="main-content benefits-section">
 <div class="container">
 
-<div class="container center">
-{:.title}
 ###  Here’s how you use GetAssured
+<div class="container margin-top-3 margin-bottom-3" style="margin-left:0px;">
+{:.title}
 <div class="video-container">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yRcW8xNRjKc?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
