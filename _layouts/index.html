@@ -59,7 +59,10 @@ layout: default
         <ul>
           {% for point in issues.problems %}
           <li class="col m3 s12">
-            <p>{{ point.content  | textilize }}</p>
+            <h6 class="center-align">{{ point.title  | textilize }}</h6>
+            {% for subquest in point.sub %}
+            <p>{{ subquest | textilize }}</p>
+            {% endfor %}
           </li>
           {% endfor %}
         </ul>
@@ -68,9 +71,9 @@ layout: default
       <div class="row">
         <h6 class="col m3 s12" style="color:blue;">How We Can Help</h6>
         <ul>
-          {% for point in issues.problems %}
+          {% for point in issues.solutions %}
           <li class="col m3 s12">
-            <p>{{ point.solution | textilize }}</p>
+            <p>{{ point.content | textilize }}</p>
           </li>
           {% endfor %}
         </ul>
