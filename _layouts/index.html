@@ -55,11 +55,11 @@ layout: default
   <!-- <div class="container-fluid margin-top-3" id="{{ issues.id  | textilize }}Body"> -->
     <div class="container">
       <div class="row">
-        <h6 class="col m3 s12" style="color:red;">Your Biggest Challenge</h6>
+        <h5 class="col m3 s12" style="color:red;">Your Biggest Challenges</h5>
         <ul>
           {% for point in issues.problems %}
           <li class="col m3 s12">
-            <h6 class="center-align">{{ point.title  | textilize }}</h6>
+            <h5 class="center-align">{{ point.title  | textilize }}</h5>
             {% for subquest in point.sub %}
             <p>{{ subquest | textilize }}</p>
             {% endfor %}
@@ -69,7 +69,7 @@ layout: default
       </div>
       <!-- solution for the problem shown above -->
       <div class="row">
-        <h6 class="col m3 s12" style="color:blue;">How We Can Help</h6>
+        <h5 class="col m3 s12" style="color:blue;">How We Can Help</h5>
         <ul>
           {% for point in issues.solutions %}
           <li class="col m3 s12">
