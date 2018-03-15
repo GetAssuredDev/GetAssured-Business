@@ -3,7 +3,7 @@ layout: post
 comments: true
 title: Is Employee Engagement That Important?
 date: 2018-03-15T09:32:16.559Z
-image: /assets/images/Is-Employee-Engagement-That-Important?.jpg
+image: /assets/images/Is-Employee-Engagement-That-Important.jpg
 tags: 'employee, engagement, productivity'
 ---
 Employee engagement isn't just another one of those 'buzzwords' used by management consultants. It is a significant business concept that has direct effect on the company's profitability. Communication, trust and mutual respect are critical to successful employee еngаgеmеnt. When combined, these factors create an environment that allows employees to fееl vаluеd therefore leading to grеаtеr mоtіvаtіоn, hіghеr employee rеtеntіоn аnd enhanced productivity.
@@ -33,3 +33,4 @@ Everybody wins
 Employee engagement ensures all employees feel that they are an integral part of the company, crucial to its success and not just another number on the payroll. It's about trust and equity, and this must be reciprocal. Employees should believe that the organization is treating them fairly, with respect and appreciates their role in the business's success. Employers on the other hand have to be confident that employees take ownership of their job, work effectively and offer real value to the business.
 
 Surveys have shown that companies with engaged employees have higher productivity. In addition, highly engaged employees have a considerably lower rate of absence in comparison with non-engaged employees. Therefore, it would not be a surprise that engaged employees enjoy their job longer and are more productive, which contributes to future success for both employee and employer. 
+
