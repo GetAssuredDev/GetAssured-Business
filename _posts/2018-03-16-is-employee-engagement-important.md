@@ -14,24 +14,19 @@ Rісhаrd Вrаnsоn, СЕО оf Vіrgіn, summеd іt uр whеn hе sаіd "О
 
 It is unnecessary to ‘manage’ employees. All of us desire opportunity, training, development and the leadership support. Just like how you would introduce opportunities to allow your children to explore their interests and talents; leaders can support the development of their employees by providing timely mentoring, teaching and encouragement in their expertise.
 
-Flexibility 
+Flexibility
 
-In today's world, it is not necessary for everyone to work in an office or a factory. In a flexible 
+In today's world, it is not necessary for everyone to work in an office or a factory. In a flexible working arrangement, an employee would have a greater say of how, when and where they work. Employees may be out on site or working from home, and this could аррlу tо mаnаgеrs as well.
 
-working arrangement, an employee would have a greater say of how, when and where they work. Employees may be out on site or working from home, and this could аррlу tо mаnаgеrs as well. 
-
-In a study conducted by Ministry of Manpower (MOM), it is shown that flexible working arrangements can bring several benefits to the employers. There are some of the benefits that companies offering flexible working arrangements enjoy. 
+In a study conducted by Ministry of Manpower (MOM), it is shown that flexible working arrangements can bring several benefits to the employers. There are some of the benefits that companies offering flexible working arrangements enjoy.
 
 * Higher productivity
-
-* Improved employee engagement 
-
+* Improved employee engagement
 * Improved rates of talent attraction and retention
-
 * Reduced health-related costs (e.g. absenteeism, medical leave)
 
 Everybody wins
 
 Employee engagement ensures all employees feel that they are an integral part of the company, crucial to its success and not just another number on the payroll. It's about trust and equity, and this must be reciprocal. Employees should believe that the organization is treating them fairly, with respect and appreciates their role in the business's success. Employers on the other hand have to be confident that employees take ownership of their job, work effectively and offer real value to the business.
 
-Surveys have shown that companies with engaged employees have higher productivity. In addition, highly engaged employees have a considerably lower rate of absence in comparison with non-engaged employees. Therefore, it would not be a surprise that engaged employees enjoy their job longer and are more productive, which contributes to future success for both employee and employer. 
+Surveys have shown that companies with engaged employees have higher productivity. In addition, highly engaged employees have a considerably lower rate of absence in comparison with non-engaged employees. Therefore, it would not be a surprise that engaged employees enjoy their job longer and are more productive, which contributes to future success for both employee and employer.
